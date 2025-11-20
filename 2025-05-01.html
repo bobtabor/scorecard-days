@@ -1212,7 +1212,7 @@
         </div>
         </div></div>
         <div class="footer">
-            Generated on 2025-11-20 15:36 UTC
+            Generated on 2025-11-20 16:00 UTC
         </div>
     </div>
     <script>
@@ -1427,7 +1427,7 @@
                     
                     // Add hover event listeners
                     candleGroup.addEventListener('mouseenter', (e) => {
-                        this.showTooltip(e, candle.date);
+                        this.showTooltip(e, candle);
                     });
                     candleGroup.addEventListener('mouseleave', () => {
                         this.hideTooltip();
@@ -1496,23 +1496,23 @@
             
             drawScorecardOverlays(group) {
                 if (this.scorecardData && this.scorecardData.v1_scorecard) {
-                    this.drawScorecardLine(group, this.scorecardData.v1_scorecard, COLORS.v1_scorecard, 6);
+                    this.drawScorecardLine(group, this.scorecardData.v1_scorecard, COLORS.v1_scorecard);
                 }
                 if (this.scorecardData && this.scorecardData.v2_scorecard) {
-                    this.drawScorecardLine(group, this.scorecardData.v2_scorecard, COLORS.v2_scorecard, 9);
+                    this.drawScorecardLine(group, this.scorecardData.v2_scorecard, COLORS.v2_scorecard);
                 }
             }
             
-            drawScorecardLine(group, scorecardData, color, maxScore) {
+            drawScorecardLine(group, scorecardData, color) {
                 // Map scorecard data to chart dates
                 const scoreByDate = {};
                 scorecardData.forEach(item => {
                     scoreByDate[item.date] = item.value;
                 });
-                
-                // Scale scores to chart height
-                const scaleScore = (score) => this.chartHeight * 0.7 * (1 - score / maxScore);
-                
+
+                // Scale scores to chart height using fixed 0-9 range for both V1 and V2
+                const scaleScore = (score) => this.chartHeight * 0.7 * (1 - score / 9);
+
                 const points = [];
                 this.data.data.forEach((candle, i) => {
                     const score = scoreByDate[candle.date];
@@ -1522,7 +1522,7 @@
                         points.push(`${x},${y}`);
                     }
                 });
-                
+
                 if (points.length > 1) {
                     const polyline = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
                     polyline.setAttribute('points', points.join(' '));
@@ -1535,25 +1535,31 @@
             }
             
             drawAxes(group) {
-                // Y-axis
-                const yAxis = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-                yAxis.setAttribute('x1', 0);
-                yAxis.setAttribute('x2', 0);
-                yAxis.setAttribute('y1', 0);
-                yAxis.setAttribute('y2', this.chartHeight);
-                yAxis.setAttribute('stroke', COLORS.text);
-                yAxis.setAttribute('stroke-width', 1);
-                group.appendChild(yAxis);
-                
-                // X-axis  
-                const xAxis = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-                xAxis.setAttribute('x1', 0);
-                xAxis.setAttribute('x2', this.chartWidth);
-                xAxis.setAttribute('y1', this.chartHeight);
-                xAxis.setAttribute('y2', this.chartHeight);
-                xAxis.setAttribute('stroke', COLORS.text);
-                xAxis.setAttribute('stroke-width', 1);
-                group.appendChild(xAxis);
+                // Draw scorecard y-axis labels (0-9 range on the right side)
+                const scorecardYAxisX = this.chartWidth + 5;
+                for (let i = 0; i <= 9; i++) {
+                    const y = this.chartHeight * 0.7 * (1 - i / 9);
+
+                    // Add tick mark
+                    const tick = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    tick.setAttribute('x1', this.chartWidth);
+                    tick.setAttribute('x2', this.chartWidth + 3);
+                    tick.setAttribute('y1', y);
+                    tick.setAttribute('y2', y);
+                    tick.setAttribute('stroke', COLORS.text);
+                    tick.setAttribute('stroke-width', 1);
+                    group.appendChild(tick);
+
+                    // Add label text
+                    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    text.setAttribute('x', scorecardYAxisX);
+                    text.setAttribute('y', y + 4);
+                    text.setAttribute('font-family', 'Arial, sans-serif');
+                    text.setAttribute('font-size', '10');
+                    text.setAttribute('fill', COLORS.text);
+                    text.textContent = i.toString();
+                    group.appendChild(text);
+                }
             }
             
             drawLegend(group) {
@@ -1612,12 +1618,44 @@
                 });
             }
             
-            showTooltip(event, dateStr, candle) {
-                // Show date and OHLC values in tooltip
-                let tooltipText = `Date: ${dateStr}`;
-                if (candle) {
-                    tooltipText += `\nOpen: ${candle.open}\nHigh: ${candle.high}\nLow: ${candle.low}\nClose: ${candle.close}\nVolume: ${candle.volume}`;
+            showTooltip(event, candle) {
+                if (!candle) return;
+
+                // Format volume with commas
+                const formatVolume = (vol) => {
+                    return vol.toLocaleString('en-US');
+                };
+
+                // Format price to 2 decimal places
+                const formatPrice = (price) => {
+                    return price.toFixed(2);
+                };
+
+                // Get scorecard values for this date
+                let v1Score = 'N/A';
+                let v2Score = 'N/A';
+
+                if (this.scorecardData) {
+                    if (this.scorecardData.v1_scorecard) {
+                        const v1Item = this.scorecardData.v1_scorecard.find(item => item.date === candle.date);
+                        if (v1Item) v1Score = v1Item.value;
+                    }
+                    if (this.scorecardData.v2_scorecard) {
+                        const v2Item = this.scorecardData.v2_scorecard.find(item => item.date === candle.date);
+                        if (v2Item) v2Score = v2Item.value;
+                    }
                 }
+
+                // Build tooltip text
+                let tooltipText = `Date: ${candle.date}\n`;
+                tooltipText += `Open: ${formatPrice(candle.open)}\n`;
+                tooltipText += `High: ${formatPrice(candle.high)}\n`;
+                tooltipText += `Low: ${formatPrice(candle.low)}\n`;
+                tooltipText += `Close: ${formatPrice(candle.close)}\n`;
+                tooltipText += `Volume: ${formatVolume(candle.volume)}\n`;
+                tooltipText += `V1 Score: ${v1Score}\n`;
+                tooltipText += `V2 Score: ${v2Score}`;
+
                 this.tooltip.textContent = tooltipText;
                 this.tooltip.style.opacity = '1';
                 this.updateTooltipPosition(event);
