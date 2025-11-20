@@ -1,0 +1,2163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macro Scorecard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .summary {
+            display: flex;
+            gap: 30px;
+            margin: 20px 0;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+        .summary-item {
+            text-align: center;
+        }
+        .summary-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2980b9;
+        }
+        .summary-label {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+            font-weight: 600;
+        }
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+        .date-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .date-link:hover {
+            text-decoration: underline;
+        }
+        .score {
+            font-weight: bold;
+            text-align: center;
+        }
+        .score.green { color: #27ae60; }
+        .score.yellow { color: #f39c12; }
+        .score.red { color: #e74c3c; }
+        .health {
+            text-align: center;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        .health.green { color: #27ae60; }
+        .health.yellow { color: #f39c12; }
+        .health.red { color: #e74c3c; }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #7f8c8d;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Macro Scorecard</h1>
+        
+        <div class="summary">
+            <div class="summary-item">
+                <div class="summary-value">253</div>
+                <div class="summary-label">Total Days</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-value">4.0/6</div>
+                <div class="summary-label">Avg V1 Score</div>
+            </div>
+            <div class="summary-item">
+                <div class="summary-value">4.9/9</div>
+                <div class="summary-label">Avg V2 Score</div>
+            </div>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>V1 Score</th>
+                    <th>V1 Health</th>
+                    <th>V2 Score</th>
+                    <th>V2 Health</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td><a href="2025-11-20.html" class="date-link">November 20, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-19.html" class="date-link">November 19, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-18.html" class="date-link">November 18, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-17.html" class="date-link">November 17, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-14.html" class="date-link">November 14, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-13.html" class="date-link">November 13, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-12.html" class="date-link">November 12, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-10.html" class="date-link">November 10, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-07.html" class="date-link">November 07, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-06.html" class="date-link">November 06, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-05.html" class="date-link">November 05, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-04.html" class="date-link">November 04, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-11-03.html" class="date-link">November 03, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-31.html" class="date-link">October 31, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-30.html" class="date-link">October 30, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-29.html" class="date-link">October 29, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-28.html" class="date-link">October 28, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-27.html" class="date-link">October 27, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-24.html" class="date-link">October 24, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-23.html" class="date-link">October 23, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-22.html" class="date-link">October 22, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-21.html" class="date-link">October 21, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-20.html" class="date-link">October 20, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-17.html" class="date-link">October 17, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-16.html" class="date-link">October 16, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-15.html" class="date-link">October 15, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-14.html" class="date-link">October 14, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-10.html" class="date-link">October 10, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-09.html" class="date-link">October 09, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-08.html" class="date-link">October 08, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-07.html" class="date-link">October 07, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-06.html" class="date-link">October 06, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-03.html" class="date-link">October 03, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-02.html" class="date-link">October 02, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-10-01.html" class="date-link">October 01, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-30.html" class="date-link">September 30, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-29.html" class="date-link">September 29, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-26.html" class="date-link">September 26, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-25.html" class="date-link">September 25, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-24.html" class="date-link">September 24, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-23.html" class="date-link">September 23, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-22.html" class="date-link">September 22, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-19.html" class="date-link">September 19, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-18.html" class="date-link">September 18, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-17.html" class="date-link">September 17, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-16.html" class="date-link">September 16, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-15.html" class="date-link">September 15, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-12.html" class="date-link">September 12, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-11.html" class="date-link">September 11, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-10.html" class="date-link">September 10, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-09.html" class="date-link">September 09, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-08.html" class="date-link">September 08, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-05.html" class="date-link">September 05, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-04.html" class="date-link">September 04, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-03.html" class="date-link">September 03, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-09-02.html" class="date-link">September 02, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-29.html" class="date-link">August 29, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-28.html" class="date-link">August 28, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-27.html" class="date-link">August 27, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-26.html" class="date-link">August 26, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-25.html" class="date-link">August 25, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-22.html" class="date-link">August 22, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-21.html" class="date-link">August 21, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-20.html" class="date-link">August 20, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-19.html" class="date-link">August 19, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-18.html" class="date-link">August 18, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-15.html" class="date-link">August 15, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-14.html" class="date-link">August 14, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-13.html" class="date-link">August 13, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-12.html" class="date-link">August 12, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-11.html" class="date-link">August 11, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-08.html" class="date-link">August 08, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-07.html" class="date-link">August 07, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-06.html" class="date-link">August 06, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-05.html" class="date-link">August 05, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-04.html" class="date-link">August 04, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-08-01.html" class="date-link">August 01, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-31.html" class="date-link">July 31, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-30.html" class="date-link">July 30, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-29.html" class="date-link">July 29, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-28.html" class="date-link">July 28, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-25.html" class="date-link">July 25, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-24.html" class="date-link">July 24, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-23.html" class="date-link">July 23, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-22.html" class="date-link">July 22, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-21.html" class="date-link">July 21, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-18.html" class="date-link">July 18, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-17.html" class="date-link">July 17, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-16.html" class="date-link">July 16, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-15.html" class="date-link">July 15, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-14.html" class="date-link">July 14, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-11.html" class="date-link">July 11, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-10.html" class="date-link">July 10, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-09.html" class="date-link">July 09, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-08.html" class="date-link">July 08, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-07.html" class="date-link">July 07, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-03.html" class="date-link">July 03, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-02.html" class="date-link">July 02, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-07-01.html" class="date-link">July 01, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-30.html" class="date-link">June 30, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-27.html" class="date-link">June 27, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-26.html" class="date-link">June 26, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-25.html" class="date-link">June 25, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-24.html" class="date-link">June 24, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-23.html" class="date-link">June 23, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-20.html" class="date-link">June 20, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-18.html" class="date-link">June 18, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-17.html" class="date-link">June 17, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-16.html" class="date-link">June 16, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-13.html" class="date-link">June 13, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-12.html" class="date-link">June 12, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-11.html" class="date-link">June 11, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-10.html" class="date-link">June 10, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-09.html" class="date-link">June 09, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-06.html" class="date-link">June 06, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-05.html" class="date-link">June 05, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-04.html" class="date-link">June 04, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-03.html" class="date-link">June 03, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-06-02.html" class="date-link">June 02, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-30.html" class="date-link">May 30, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-29.html" class="date-link">May 29, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-28.html" class="date-link">May 28, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-27.html" class="date-link">May 27, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-23.html" class="date-link">May 23, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-22.html" class="date-link">May 22, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-21.html" class="date-link">May 21, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-20.html" class="date-link">May 20, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-19.html" class="date-link">May 19, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-16.html" class="date-link">May 16, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-15.html" class="date-link">May 15, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-14.html" class="date-link">May 14, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-13.html" class="date-link">May 13, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-12.html" class="date-link">May 12, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-09.html" class="date-link">May 09, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-08.html" class="date-link">May 08, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-07.html" class="date-link">May 07, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-06.html" class="date-link">May 06, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-05.html" class="date-link">May 05, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-02.html" class="date-link">May 02, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-05-01.html" class="date-link">May 01, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-30.html" class="date-link">April 30, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-29.html" class="date-link">April 29, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-28.html" class="date-link">April 28, 2025</a></td>
+                    <td class="score yellow">2/6</td>
+                    <td class="health yellow">Weak</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-25.html" class="date-link">April 25, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-24.html" class="date-link">April 24, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-23.html" class="date-link">April 23, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-22.html" class="date-link">April 22, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-21.html" class="date-link">April 21, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-18.html" class="date-link">April 18, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-17.html" class="date-link">April 17, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-16.html" class="date-link">April 16, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-15.html" class="date-link">April 15, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-14.html" class="date-link">April 14, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-11.html" class="date-link">April 11, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-10.html" class="date-link">April 10, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-09.html" class="date-link">April 09, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-08.html" class="date-link">April 08, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-07.html" class="date-link">April 07, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-04.html" class="date-link">April 04, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-03.html" class="date-link">April 03, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-02.html" class="date-link">April 02, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-04-01.html" class="date-link">April 01, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-31.html" class="date-link">March 31, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-28.html" class="date-link">March 28, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-27.html" class="date-link">March 27, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-26.html" class="date-link">March 26, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-25.html" class="date-link">March 25, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-24.html" class="date-link">March 24, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-21.html" class="date-link">March 21, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-20.html" class="date-link">March 20, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-19.html" class="date-link">March 19, 2025</a></td>
+                    <td class="score red">1/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-18.html" class="date-link">March 18, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-17.html" class="date-link">March 17, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-14.html" class="date-link">March 14, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-13.html" class="date-link">March 13, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-12.html" class="date-link">March 12, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-11.html" class="date-link">March 11, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-10.html" class="date-link">March 10, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-07.html" class="date-link">March 07, 2025</a></td>
+                    <td class="score red">0/6</td>
+                    <td class="health red">Very Weak</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-06.html" class="date-link">March 06, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-05.html" class="date-link">March 05, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-04.html" class="date-link">March 04, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-03-03.html" class="date-link">March 03, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-28.html" class="date-link">February 28, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-27.html" class="date-link">February 27, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-26.html" class="date-link">February 26, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-25.html" class="date-link">February 25, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-24.html" class="date-link">February 24, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-21.html" class="date-link">February 21, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-20.html" class="date-link">February 20, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-19.html" class="date-link">February 19, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-18.html" class="date-link">February 18, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-14.html" class="date-link">February 14, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-13.html" class="date-link">February 13, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-12.html" class="date-link">February 12, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-11.html" class="date-link">February 11, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-10.html" class="date-link">February 10, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-07.html" class="date-link">February 07, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-06.html" class="date-link">February 06, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-05.html" class="date-link">February 05, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-04.html" class="date-link">February 04, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-02-03.html" class="date-link">February 03, 2025</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-31.html" class="date-link">January 31, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-30.html" class="date-link">January 30, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-29.html" class="date-link">January 29, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-28.html" class="date-link">January 28, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-27.html" class="date-link">January 27, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-24.html" class="date-link">January 24, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-23.html" class="date-link">January 23, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-22.html" class="date-link">January 22, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-21.html" class="date-link">January 21, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-17.html" class="date-link">January 17, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-16.html" class="date-link">January 16, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-15.html" class="date-link">January 15, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-14.html" class="date-link">January 14, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">1/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-13.html" class="date-link">January 13, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">0/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-10.html" class="date-link">January 10, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-09.html" class="date-link">January 09, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-08.html" class="date-link">January 08, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-07.html" class="date-link">January 07, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-06.html" class="date-link">January 06, 2025</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-03.html" class="date-link">January 03, 2025</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2025-01-02.html" class="date-link">January 02, 2025</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-31.html" class="date-link">December 31, 2024</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-30.html" class="date-link">December 30, 2024</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-27.html" class="date-link">December 27, 2024</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-26.html" class="date-link">December 26, 2024</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-24.html" class="date-link">December 24, 2024</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-23.html" class="date-link">December 23, 2024</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-20.html" class="date-link">December 20, 2024</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score red">2/9</td>
+                    <td class="health red">Very Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-19.html" class="date-link">December 19, 2024</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-18.html" class="date-link">December 18, 2024</a></td>
+                    <td class="score yellow">3/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-17.html" class="date-link">December 17, 2024</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-16.html" class="date-link">December 16, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-13.html" class="date-link">December 13, 2024</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-12.html" class="date-link">December 12, 2024</a></td>
+                    <td class="score yellow">4/6</td>
+                    <td class="health yellow">Moderate</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-11.html" class="date-link">December 11, 2024</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-10.html" class="date-link">December 10, 2024</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-09.html" class="date-link">December 09, 2024</a></td>
+                    <td class="score green">5/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-06.html" class="date-link">December 06, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-05.html" class="date-link">December 05, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-04.html" class="date-link">December 04, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-03.html" class="date-link">December 03, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-12-02.html" class="date-link">December 02, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-29.html" class="date-link">November 29, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-27.html" class="date-link">November 27, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">5/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-26.html" class="date-link">November 26, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-25.html" class="date-link">November 25, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score green">7/9</td>
+                    <td class="health green">Strong</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-22.html" class="date-link">November 22, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">6/9</td>
+                    <td class="health yellow">Moderate</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-21.html" class="date-link">November 21, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-20.html" class="date-link">November 20, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">4/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-19.html" class="date-link">November 19, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+                <tr>
+                    <td><a href="2024-11-18.html" class="date-link">November 18, 2024</a></td>
+                    <td class="score green">6/6</td>
+                    <td class="health green">Very Strong</td>
+                    <td class="score yellow">3/9</td>
+                    <td class="health yellow">Weak</td>
+                </tr>
+            
+            </tbody>
+        </table>
+        
+        <div class="footer">
+            Generated on 2025-11-20 15:35 UTC
+        </div>
+    </div>
+</body>
+</html>
