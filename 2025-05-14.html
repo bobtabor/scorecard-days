@@ -606,20 +606,20 @@
                 <h4 id="qqq-daily-trend-status">QQQ Daily Trend Status</h4>
                 <span class="explanation-score fail">FAIL</span>
             </div>
-            <p class="explanation-description">Evaluates NASDAQ-100 trend using weekly moving averages applied to daily timeframe.</p>
+            <p class="explanation-description">Evaluates NASDAQ-100 trend using weekly moving averages, checked every trading day.</p>
             <div class="component-current-values"><strong>Current Values:</strong> symbol: QQQ • weekly_close: 487.97 • ma_10w: 471.86</div>
             
             <div class="explanation-details">
                 <div class="explanation-section">
                     <strong>Calculation Method:</strong>
                     <ul>
-        <li>1. Calculate weekly closes for QQQ (Friday or last trading day of week)</li><li>2. Calculate 10-week and 30-week moving averages of weekly closes</li><li>3. Apply trend criteria daily based on current week's values</li>
+        <li>1. Calculate weekly closes for QQQ (Friday or last trading day of week)</li><li>2. Calculate 10-week and 30-week moving averages of weekly closes</li><li>3. Each trading day, use the most recent weekly close and moving averages</li><li>4. Apply trend criteria: Weekly close ≥ 30-week MA AND 10-week MA ≥ 30-week MA</li>
                     </ul>
                 </div>
                 
                 <div class="explanation-section">
                     <strong>Interpretation:</strong>
-                    <p>Technology stocks (NASDAQ) often lead market moves. Strong QQQ trend indicates healthy market leadership in growth sectors.</p>
+                    <p>Technology stocks (NASDAQ) often lead market moves. Strong QQQ trend indicates healthy market leadership in growth sectors. This component updates every trading day using the latest weekly data.</p>
                 </div>
                 
                 <div class="explanation-section">
@@ -629,7 +629,7 @@
                 
                 <div class="explanation-section">
                     <strong>Business Logic:</strong>
-                    <p>QQQ represents the innovation and growth engine of the US market.</p>
+                    <p>QQQ represents the innovation and growth engine of the US market. Daily evaluation provides immediate feedback on trend changes.</p>
                 </div>
             </div>
         </div>
@@ -672,30 +672,30 @@
                 <h4 id="qqq-weekly-trend-status">QQQ Weekly Trend Status</h4>
                 <span class="explanation-score fail">FAIL</span>
             </div>
-            <p class="explanation-description">Weekly-specific evaluation of QQQ trend, separate from daily assessment.</p>
+            <p class="explanation-description">Weekly-specific evaluation of QQQ trend, only evaluated on week-end days (Friday or last trading day).</p>
             <div class="component-current-values"><strong>Current Values:</strong> symbol: QQQ • weekly_close: 487.97 • ma_10w: 471.86</div>
             
             <div class="explanation-details">
                 <div class="explanation-section">
                     <strong>Calculation Method:</strong>
                     <ul>
-        <li>1. Same methodology as QQQ Daily Trend</li><li>2. Explicitly evaluated on weekly timeframe</li>
+        <li>1. Only evaluates on Friday (or last trading day of the week if Friday is a holiday)</li><li>2. Calculate weekly closes for QQQ</li><li>3. Calculate 10-week and 30-week moving averages of weekly closes</li><li>4. Apply trend criteria: Weekly close ≥ 30-week MA AND 10-week MA ≥ 30-week MA</li><li>5. On non-week-end days (Mon-Thu), returns 0 with note 'Not evaluated today'</li>
                     </ul>
                 </div>
                 
                 <div class="explanation-section">
                     <strong>Interpretation:</strong>
-                    <p>Provides weekly perspective confirmation of QQQ trend status, complementing the daily view.</p>
+                    <p>Provides weekly perspective confirmation of QQQ trend status. Unlike the Daily version, this only updates once per week, filtering out intra-week noise and confirming the medium-term trend.</p>
                 </div>
                 
                 <div class="explanation-section">
                     <strong>Scoring:</strong>
-                    <p>1 point if weekly trend criteria are met</p>
+                    <p>1 point if weekly trend criteria are met (on week-end days only)</p>
                 </div>
                 
                 <div class="explanation-section">
                     <strong>Business Logic:</strong>
-                    <p>Weekly analysis filters out daily noise and confirms medium-term trend.</p>
+                    <p>Weekly-only analysis ensures the signal is based on completed weekly data, avoiding premature signals from incomplete weeks.</p>
                 </div>
             </div>
         </div>
@@ -1212,7 +1212,7 @@
         </div>
         </div></div>
         <div class="footer">
-            Generated on 2025-11-20 16:00 UTC
+            Generated on 2025-11-20 16:32 UTC
         </div>
     </div>
     <script>
