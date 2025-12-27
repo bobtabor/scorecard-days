@@ -339,7 +339,7 @@
             </div>
             <div class="scorecard-section">
                 <h3>V2 Scorecard (New)</h3>
-                <div class="score-value v2-score">4/9</div>
+                <div class="score-value v2-score">3/9</div>
             </div>
         </div>
         <div class="charts-section">
@@ -360,7 +360,7 @@
                         <span class="component-name"><a href="#10-day-successful-new-high-index">10-Day New High Index</a></span>
                         <span class="component-status pass">PASS</span>
                     </div>
-                    <div class="component-details">eligible_stocks: 224; successful_stocks: 116; success_rate: 51.8%</div>
+                    <div class="component-details">eligible_stocks: 237; successful_stocks: 123; success_rate: 51.9%</div>
                 </div>
             
                 <div class="component">
@@ -368,7 +368,7 @@
                         <span class="component-name"><a href="#new-highs-today-count">New Highs Today</a></span>
                         <span class="component-status pass">PASS</span>
                     </div>
-                    <div class="component-details">new_highs_count: 119; total_symbols: 5689; threshold: 100</div>
+                    <div class="component-details">new_highs_count: 125; total_symbols: 6331; threshold: 100</div>
                 </div>
             
                 <div class="component">
@@ -410,14 +410,14 @@
                 <div class="component">
                     <div class="component-header">
                         <span class="component-name"><a href="#more-new-highs-than-new-lows-today">V2 New Highs vs Lows</a></span>
-                        <span class="component-status pass">PASS</span>
+                        <span class="component-status fail">FAIL</span>
                     </div>
-                    <div class="component-details">new_highs_count: 119; new_lows_count: 100; result: Pass</div>
+                    <div class="component-details">new_highs_count: 72; new_lows_count: 124; result: Fail</div>
                 </div>
             
                 <div class="component">
                     <div class="component-header">
-                        <span class="component-name"><a href="#qqq-above-10-week-ma">QQQ Above 10-Week MA</a></span>
+                        <span class="component-name"><a href="#qqq-above-10-week">V2 QQQ Above 10-Week</a></span>
                         <span class="component-status pass">PASS</span>
                     </div>
                     <div class="component-details">current_close: 602.01; 10_week_ma: 587.24; result: Pass</div>
@@ -425,7 +425,7 @@
             
                 <div class="component">
                     <div class="component-header">
-                        <span class="component-name"><a href="#qqq-above-4-week-ma">QQQ Above 4-Week MA</a></span>
+                        <span class="component-name"><a href="#qqq-above-4-week">V2 QQQ Above 4-Week</a></span>
                         <span class="component-status pass">PASS</span>
                     </div>
                     <div class="component-details">current_close: 602.01; 4_week_ma: 597.66; result: Pass</div>
@@ -433,7 +433,7 @@
             
                 <div class="component">
                     <div class="component-header">
-                        <span class="component-name"><a href="#qqq-above-10-day-ma">QQQ Above 10-Day MA</a></span>
+                        <span class="component-name"><a href="#qqq-above-10-day">V2 QQQ Above 10-Day</a></span>
                         <span class="component-status fail">FAIL</span>
                     </div>
                     <div class="component-details">current_close: 602.01; 10_day_ma: 603.84; result: Fail</div>
@@ -441,7 +441,7 @@
             
                 <div class="component">
                     <div class="component-header">
-                        <span class="component-name"><a href="#qqq-moving-average-hierarchy">V2 QQQ Weekly Trend Hierarchy</a></span>
+                        <span class="component-name"><a href="#qqq-ma-alignment">V2 QQQ MA Alignment</a></span>
                         <span class="component-status pass">PASS</span>
                     </div>
                     <div class="component-details">4_week_ma: 597.66; 10_week_ma: 587.24; 30_week_ma: 538.67</div>
@@ -449,34 +449,34 @@
             
                 <div class="component">
                     <div class="component-header">
-                        <span class="component-name"><a href="#qqq-stochastic-104-20">QQQ Stochastic [10,4] < 20</a></span>
+                        <span class="component-name"><a href="#qqq-stochastic-10-4-oversold">V2 QQQ Stochastic [10,4] Oversold</a></span>
                         <span class="component-status fail">FAIL</span>
                     </div>
-                    <div class="component-details">stoch_k: 62.29; result: Fail</div>
+                    <div class="component-details">stoch_k: 62.29; stoch_d: 73.44; threshold: 20</div>
                 </div>
             
                 <div class="component">
                     <div class="component-header">
-                        <span class="component-name"><a href="#qqq-stochastic-101-20">QQQ Stochastic [10,1] <= 20</a></span>
+                        <span class="component-name"><a href="#qqq-macd-rising">V2 QQQ MACD Rising</a></span>
                         <span class="component-status fail">FAIL</span>
                     </div>
-                    <div class="component-details">stoch_k: 53.71; result: Fail</div>
+                    <div class="component-details">current_histogram: -1.12; prev_histogram: -1.01; prev2_histogram: 0.43</div>
                 </div>
             
                 <div class="component">
                     <div class="component-header">
-                        <span class="component-name"><a href="#qqq-macd-histogram-rising">V2 QQQ MACD Histogram</a></span>
+                        <span class="component-name"><a href="#qqq-stochastic-10-4-4">V2 QQQ Stochastic [10,4,4]</a></span>
                         <span class="component-status fail">FAIL</span>
                     </div>
-                    <div class="component-details">current_histogram: -1.16; prev_histogram: -1.05; prev2_histogram: 0.39</div>
+                    <div class="component-details">stoch_k_fast: 62.29; stoch_d_slow: 76.59; fast_above_slow: 0</div>
                 </div>
             
                 <div class="component">
                     <div class="component-header">
-                        <span class="component-name"><a href="#qqq-stochastic-momentum-signal">V2 QQQ Stochastic Momentum</a></span>
+                        <span class="component-name"><a href="#qqq-stochastic-10-1-oversold">V2 QQQ Stochastic [10,1] Oversold</a></span>
                         <span class="component-status fail">FAIL</span>
                     </div>
-                    <div class="component-details">stoch_k_fast: 62.29; stoch_d_slow: 76.59; fast_above_slow: False</div>
+                    <div class="component-details">stoch_k: 53.71; stoch_d: 50.17; threshold: 20</div>
                 </div>
             
         </div>
@@ -505,22 +505,22 @@
             
                 <div class="metric">
                     <div class="metric-name"><a href="#percentage-of-stocks-above-40-day-sma">Stocks Above 40-Day SMA %</a></div>
-                    <div class="metric-value">44.5%</div>
+                    <div class="metric-value">44.3%</div>
                 </div>
             
                 <div class="metric">
-                    <div class="metric-name"><a href="#nasdaq-100-stocks-above-macd-signal-line">NASDAQ 100 Above MACD Signal</a></div>
-                    <div class="metric-value">38.10</div>
+                    <div class="metric-name"><a href="#nasdaq-100-stocks-above-macd-signal-line">% NASDAQ 100 Above MACD Signal</a></div>
+                    <div class="metric-value">39.0%</div>
                 </div>
             
                 <div class="metric">
                     <div class="metric-name"><a href="#qqq-weekly-stochastic-reading">QQQ Weekly Stochastic</a></div>
-                    <div class="metric-value">78.73</div>
+                    <div class="metric-value">N/A</div>
                 </div>
             
                 <div class="metric">
                     <div class="metric-name"><a href="#daily-market-advance-decline-statistics">Advance Decline Metrics</a></div>
-                    <div class="metric-value">4285/1301 (Net: 2984)</div>
+                    <div class="metric-value">N/A</div>
                 </div>
             
         </div>
@@ -541,7 +541,7 @@
                 <span class="explanation-score pass">PASS</span>
             </div>
             <p class="explanation-description">Measures the success rate of stocks that made new highs 10 trading days ago.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> eligible_stocks: 224 • successful_stocks: 116 • success_rate: 51.8%</div>
+            <div class="component-current-values"><strong>Current Values:</strong> eligible_stocks: 237 • successful_stocks: 123 • success_rate: 51.9%</div>
             
             <div class="explanation-details">
                 <div class="explanation-section">
@@ -574,7 +574,7 @@
                 <span class="explanation-score pass">PASS</span>
             </div>
             <p class="explanation-description">Counts the number of stocks making new highs on the current trading day.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> new_highs_count: 119 • total_symbols: 5689 • threshold: 100</div>
+            <div class="component-current-values"><strong>Current Values:</strong> new_highs_count: 125 • total_symbols: 6331 • threshold: 100</div>
             
             <div class="explanation-details">
                 <div class="explanation-section">
@@ -739,10 +739,10 @@
         <div class="explanation-item">
             <div class="explanation-header">
                 <h4 id="more-new-highs-than-new-lows-today">More New Highs than New Lows Today</h4>
-                <span class="explanation-score pass">PASS</span>
+                <span class="explanation-score fail">FAIL</span>
             </div>
             <p class="explanation-description">Compares the count of stocks making new highs versus new lows on the current trading day.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> new_highs_count: 119 • new_lows_count: 100 • result: Pass</div>
+            <div class="component-current-values"><strong>Current Values:</strong> new_highs_count: 72 • new_lows_count: 124 • result: Fail</div>
             
             <div class="explanation-details">
                 <div class="explanation-section">
@@ -771,209 +771,11 @@
         
         <div class="explanation-item">
             <div class="explanation-header">
-                <h4 id="qqq-above-10-week-ma">QQQ Above 10-Week MA</h4>
-                <span class="explanation-score pass">PASS</span>
-            </div>
-            <p class="explanation-description">Evaluates whether QQQ's weekly closing price is trading above its 10-week moving average.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> current_close: 602.01 • 10_week_ma: 587.24 • result: Pass</div>
-            
-            <div class="explanation-details">
-                <div class="explanation-section">
-                    <strong>Calculation Method:</strong>
-                    <ul>
-        <li>1. Calculate 10-week moving average of QQQ weekly closes</li><li>2. Compare current week's close to 10-week MA</li><li>3. Pass if current close > 10-week MA</li>
-                    </ul>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Interpretation:</strong>
-                    <p>When QQQ trades above its 10-week moving average, it indicates a medium-term uptrend is intact.</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Scoring:</strong>
-                    <p>1 point if QQQ close > 10-week MA</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Business Logic:</strong>
-                    <p>The 10-week MA represents intermediate-term trend direction. Trading above it confirms medium-term bullish momentum.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="explanation-item">
-            <div class="explanation-header">
-                <h4 id="qqq-above-4-week-ma">QQQ Above 4-Week MA</h4>
-                <span class="explanation-score pass">PASS</span>
-            </div>
-            <p class="explanation-description">Evaluates whether QQQ's weekly closing price is trading above its 4-week moving average.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> current_close: 602.01 • 4_week_ma: 597.66 • result: Pass</div>
-            
-            <div class="explanation-details">
-                <div class="explanation-section">
-                    <strong>Calculation Method:</strong>
-                    <ul>
-        <li>1. Calculate 4-week moving average of QQQ weekly closes</li><li>2. Compare current week's close to 4-week MA</li><li>3. Pass if current close > 4-week MA</li>
-                    </ul>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Interpretation:</strong>
-                    <p>When QQQ trades above its 4-week moving average, it indicates a short-term uptrend is intact.</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Scoring:</strong>
-                    <p>1 point if QQQ close > 4-week MA</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Business Logic:</strong>
-                    <p>The 4-week MA represents short-term trend direction. Trading above it confirms recent bullish momentum.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="explanation-item">
-            <div class="explanation-header">
-                <h4 id="qqq-above-10-day-ma">QQQ Above 10-Day MA</h4>
-                <span class="explanation-score fail">FAIL</span>
-            </div>
-            <p class="explanation-description">Evaluates whether QQQ's daily closing price is trading above its 10-day moving average.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> current_close: 602.01 • 10_day_ma: 603.84 • result: Fail</div>
-            
-            <div class="explanation-details">
-                <div class="explanation-section">
-                    <strong>Calculation Method:</strong>
-                    <ul>
-        <li>1. Calculate 10-day moving average of QQQ daily closes</li><li>2. Compare current close to 10-day MA</li><li>3. Pass if current close > 10-day MA</li>
-                    </ul>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Interpretation:</strong>
-                    <p>When QQQ trades above its 10-day moving average, it indicates very short-term uptrend momentum.</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Scoring:</strong>
-                    <p>1 point if QQQ close > 10-day MA</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Business Logic:</strong>
-                    <p>The 10-day MA represents very short-term trend direction. Trading above it confirms immediate bullish momentum.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="explanation-item">
-            <div class="explanation-header">
-                <h4 id="qqq-moving-average-hierarchy">QQQ Moving Average Hierarchy</h4>
-                <span class="explanation-score pass">PASS</span>
-            </div>
-            <p class="explanation-description">Checks if QQQ's moving averages are in proper bullish order.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> 4_week_ma: 597.66 • 10_week_ma: 587.24 • 30_week_ma: 538.67</div>
-            
-            <div class="explanation-details">
-                <div class="explanation-section">
-                    <strong>Calculation Method:</strong>
-                    <ul>
-        <li>1. Calculate QQQ's 4-week, 10-week, and 30-week averages</li><li>2. Verify: 4-week MA > 10-week MA > 30-week MA</li>
-                    </ul>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Interpretation:</strong>
-                    <p>When shorter-term averages are above longer-term averages, it confirms a strong bullish trend structure.</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Scoring:</strong>
-                    <p>1 point if 4w MA > 10w MA > 30w MA</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Business Logic:</strong>
-                    <p>Proper MA hierarchy indicates sustained trend momentum rather than temporary moves.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="explanation-item">
-            <div class="explanation-header">
-                <h4 id="qqq-stochastic-10-4-<-20">QQQ Stochastic [10,4] < 20</h4>
-                <span class="explanation-score fail">FAIL</span>
-            </div>
-            <p class="explanation-description">Uses stochastic oscillator with [10,4,3] settings to identify oversold conditions in QQQ.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> stoch_k: 62.29 • result: Fail</div>
-            
-            <div class="explanation-details">
-                <div class="explanation-section">
-                    <strong>Calculation Method:</strong>
-                    <ul>
-        <li>1. Calculate stochastic oscillator with K-period=10, K-slowing=4, D-period=3</li><li>2. Check if %K value is less than 20</li><li>3. Pass if stochastic %K < 20</li>
-                    </ul>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Interpretation:</strong>
-                    <p>Oversold conditions (< 20) often precede bounces in uptrending markets. This setting uses moderate smoothing for reliable signals.</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Scoring:</strong>
-                    <p>1 point if stochastic [10,4,3] < 20</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Business Logic:</strong>
-                    <p>Oversold conditions in uptrending markets often represent tactical buying opportunities as momentum resets.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="explanation-item">
-            <div class="explanation-header">
-                <h4 id="qqq-stochastic-10-1-<=-20">QQQ Stochastic [10,1] <= 20</h4>
-                <span class="explanation-score fail">FAIL</span>
-            </div>
-            <p class="explanation-description">Uses stochastic oscillator with [10,1,3] settings to identify oversold conditions in QQQ.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> stoch_k: 53.71 • result: Fail</div>
-            
-            <div class="explanation-details">
-                <div class="explanation-section">
-                    <strong>Calculation Method:</strong>
-                    <ul>
-        <li>1. Calculate stochastic oscillator with K-period=10, K-slowing=1, D-period=3</li><li>2. Check if %K value is less than or equal to 20</li><li>3. Pass if stochastic %K ≤ 20</li>
-                    </ul>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Interpretation:</strong>
-                    <p>This faster stochastic (minimal smoothing) identifies oversold conditions more quickly, useful for short-term timing.</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Scoring:</strong>
-                    <p>1 point if stochastic [10,1,3] ≤ 20</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Business Logic:</strong>
-                    <p>Faster stochastic settings provide earlier oversold signals for more aggressive entry timing in uptrends.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="explanation-item">
-            <div class="explanation-header">
                 <h4 id="qqq-macd-histogram-rising">QQQ MACD Histogram Rising</h4>
                 <span class="explanation-score fail">FAIL</span>
             </div>
             <p class="explanation-description">Evaluates MACD histogram momentum for QQQ to identify trend acceleration.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> current_histogram: -1.16 • prev_histogram: -1.05 • prev2_histogram: 0.39</div>
+            <div class="component-current-values"><strong>Current Values:</strong> current_histogram: -1.12 • prev_histogram: -1.01 • prev2_histogram: 0.43</div>
             
             <div class="explanation-details">
                 <div class="explanation-section">
@@ -996,39 +798,6 @@
                 <div class="explanation-section">
                     <strong>Business Logic:</strong>
                     <p>MACD histogram shows the rate of change in momentum - rising indicates accelerating bullish momentum.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="explanation-item">
-            <div class="explanation-header">
-                <h4 id="qqq-stochastic-momentum-signal">QQQ Stochastic Momentum Signal</h4>
-                <span class="explanation-score fail">FAIL</span>
-            </div>
-            <p class="explanation-description">Uses stochastic to identify momentum conditions in QQQ.</p>
-            <div class="component-current-values"><strong>Current Values:</strong> stoch_k_fast: 62.29 • stoch_d_slow: 76.59 • fast_above_slow: False</div>
-            
-            <div class="explanation-details">
-                <div class="explanation-section">
-                    <strong>Calculation Method:</strong>
-                    <ul>
-        <li>1. Calculate QQQ stochastic [10,4,4]</li><li>2. Check if %K (fast) > %D (slow) OR stochastic > 80</li>
-                    </ul>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Interpretation:</strong>
-                    <p>Fast stochastic above slow indicates building momentum. Values above 80 indicate strong momentum (overbought but strong).</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Scoring:</strong>
-                    <p>1 point if %K > %D OR stochastic > 80</p>
-                </div>
-                
-                <div class="explanation-section">
-                    <strong>Business Logic:</strong>
-                    <p>Momentum signals help identify when strength is building or when markets are in strong trending phases.</p>
                 </div>
             </div>
         </div>
@@ -1114,7 +883,7 @@
         <div class="explanation-item metric-explanation">
             <div class="explanation-header">
                 <h4 id="percentage-of-stocks-above-40-day-sma">Percentage of Stocks Above 40-Day SMA</h4>
-                <span class="metric-current-value">44.5 Percentage</span>
+                <span class="metric-current-value">44.31 Percentage</span>
             </div>
             <p class="explanation-description">Percentage of stocks in the universe currently trading above their 40-day Simple Moving Average.</p>
             
@@ -1138,25 +907,25 @@
         
         <div class="explanation-item metric-explanation">
             <div class="explanation-header">
-                <h4 id="nasdaq-100-stocks-above-macd-signal-line">NASDAQ 100 Stocks Above MACD Signal Line</h4>
-                <span class="metric-current-value">38.1 Count (out of ~100)</span>
+                <h4 id="%-nasdaq-100-stocks-above-macd-signal-line">% NASDAQ 100 Stocks Above MACD Signal Line</h4>
+                <span class="metric-current-value">39 Percentage (shown as count/total)</span>
             </div>
-            <p class="explanation-description">Count of NASDAQ 100 constituent stocks currently above their MACD signal line.</p>
+            <p class="explanation-description">Percentage of NASDAQ 100 constituent stocks currently above their MACD signal line.</p>
             
             <div class="explanation-details">
                 <div class="explanation-section">
                     <strong>Calculation Method:</strong>
-        <ul><li>1. Fetch current NASDAQ 100 constituents</li><li>2. Calculate MACD for each stock</li><li>3. Count stocks where MACD line > MACD signal line</li></ul>
+        <ul><li>1. Fetch current NASDAQ 100 constituents (from stocks.nasdaq100_constituent)</li><li>2. Calculate MACD [12,26,9] for each stock</li><li>3. Count stocks where MACD line > MACD signal line</li><li>4. Display as count/total with percentage (e.g., 62/96 (64.6%))</li></ul>
                 </div>
                 
                 <div class="explanation-section">
                     <strong>Interpretation:</strong>
-                    <p>Higher counts indicate broad momentum among leading technology stocks. Tracks momentum breadth in growth leaders.</p>
+                    <p>Higher percentages indicate broad momentum among leading technology stocks. Tracks momentum breadth in growth leaders.</p>
                 </div>
                 
                 <div class="explanation-section">
                     <strong>Business Logic:</strong>
-                    <p>NASDAQ 100 represents market leadership - broad momentum here suggests healthy market leadership.</p>
+                    <p>NASDAQ 100 represents market leadership - broad momentum here suggests healthy market leadership. Note: Uses current constituency only.</p>
                 </div>
             </div>
         </div>
@@ -1164,7 +933,7 @@
         <div class="explanation-item metric-explanation">
             <div class="explanation-header">
                 <h4 id="qqq-weekly-stochastic-reading">QQQ Weekly Stochastic Reading</h4>
-                <span class="metric-current-value">79 0-100 scale</span>
+                <span class="metric-current-value">N/A 0-100 scale</span>
             </div>
             <p class="explanation-description">Current weekly stochastic oscillator reading for QQQ using 10-period lookback.</p>
             
@@ -1189,7 +958,7 @@
         <div class="explanation-item metric-explanation">
             <div class="explanation-header">
                 <h4 id="daily-market-advance-decline-statistics">Daily Market Advance/Decline Statistics</h4>
-                <span class="metric-current-value">4285/1301 (Net: 2984, Ratio: 3.29) Count, Ratio, Net</span>
+                <span class="metric-current-value">N/A Count, Ratio, Net</span>
             </div>
             <p class="explanation-description">Comprehensive advance/decline statistics for the trading day across all tracked stocks.</p>
             
@@ -1212,15 +981,15 @@
         </div>
         </div></div>
         <div class="footer">
-            Generated on 2025-12-01 19:40 UTC
+            Generated on 2025-12-27 09:24 UTC
         </div>
     </div>
     <script>
         // Chart data
         const spyData = {"symbol": "SPY", "data": [{"date": "2025-07-16", "open": 623.74, "high": 624.73, "low": 618.05, "close": 624.22, "volume": 88987511, "ema_8": 622.54, "ema_21": 615.39, "sma_50": 598.55, "bb_upper": 635.98, "bb_middle": 614.85, "bb_lower": 593.72}, {"date": "2025-07-17", "open": 624.4, "high": 628.4, "low": 624.18, "close": 628.04, "volume": 68885683, "ema_8": 623.76, "ema_21": 616.54, "sma_50": 599.84, "bb_upper": 636.63, "bb_middle": 616.38, "bb_lower": 596.13}, {"date": "2025-07-18", "open": 629.3, "high": 629.47, "low": 626.46, "close": 627.58, "volume": 65621645, "ema_8": 624.61, "ema_21": 617.54, "sma_50": 601.22, "bb_upper": 636.63, "bb_middle": 617.89, "bb_lower": 599.14}, {"date": "2025-07-21", "open": 628.77, "high": 631.54, "low": 628.34, "close": 628.77, "volume": 63374984, "ema_8": 625.53, "ema_21": 618.57, "sma_50": 602.57, "bb_upper": 635.31, "bb_middle": 619.61, "bb_lower": 603.91}, {"date": "2025-07-22", "open": 629.1, "high": 629.73, "low": 626.19, "close": 628.86, "volume": 60046288, "ema_8": 626.27, "ema_21": 619.5, "sma_50": 603.85, "bb_upper": 634.32, "bb_middle": 621.05, "bb_lower": 607.77}, {"date": "2025-07-23", "open": 631.55, "high": 634.21, "low": 629.73, "close": 634.21, "volume": 70511036, "ema_8": 628.04, "ema_21": 620.84, "sma_50": 605.24, "bb_upper": 635.14, "bb_middle": 622.42, "bb_lower": 609.69}, {"date": "2025-07-24", "open": 634.6, "high": 636.15, "low": 633.99, "close": 634.42, "volume": 71307134, "ema_8": 629.45, "ema_21": 622.07, "sma_50": 606.27, "bb_upper": 635.41, "bb_middle": 623.78, "bb_lower": 612.16}, {"date": "2025-07-25", "open": 635.09, "high": 637.58, "low": 634.84, "close": 637.1, "volume": 56865364, "ema_8": 631.15, "ema_21": 623.44, "sma_50": 607.28, "bb_upper": 636.7, "bb_middle": 625.04, "bb_lower": 613.39}, {"date": "2025-07-28", "open": 637.48, "high": 638.04, "low": 635.54, "close": 636.94, "volume": 54917102, "ema_8": 632.44, "ema_21": 624.67, "sma_50": 608.26, "bb_upper": 637.93, "bb_middle": 626.14, "bb_lower": 614.36}, {"date": "2025-07-29", "open": 638.35, "high": 638.67, "low": 634.34, "close": 635.26, "volume": 60556278, "ema_8": 633.07, "ema_21": 625.63, "sma_50": 609.16, "bb_upper": 638.79, "bb_middle": 627.02, "bb_lower": 615.24}, {"date": "2025-07-30", "open": 635.92, "high": 637.68, "low": 631.54, "close": 634.46, "volume": 80418851, "ema_8": 633.38, "ema_21": 626.43, "sma_50": 609.97, "bb_upper": 639.21, "bb_middle": 627.86, "bb_lower": 616.5}, {"date": "2025-07-31", "open": 639.46, "high": 639.85, "low": 630.76, "close": 632.08, "volume": 103385246, "ema_8": 633.09, "ema_21": 626.95, "sma_50": 610.71, "bb_upper": 639.38, "bb_middle": 628.44, "bb_lower": 617.49}, {"date": "2025-08-01", "open": 626.3, "high": 626.34, "low": 619.29, "close": 621.72, "volume": 140103572, "ema_8": 630.56, "ema_21": 626.47, "sma_50": 611.29, "bb_upper": 639.53, "bb_middle": 628.26, "bb_lower": 616.98}, {"date": "2025-08-04", "open": 625.67, "high": 631.22, "low": 625.58, "close": 631.17, "volume": 73218015, "ema_8": 630.7, "ema_21": 626.9, "sma_50": 612.25, "bb_upper": 639.54, "bb_middle": 628.78, "bb_lower": 618.03}, {"date": "2025-08-05", "open": 631.79, "high": 632.61, "low": 627.04, "close": 627.97, "volume": 68051401, "ema_8": 630.09, "ema_21": 627.0, "sma_50": 613.15, "bb_upper": 639.17, "bb_middle": 629.16, "bb_lower": 619.15}, {"date": "2025-08-06", "open": 629.05, "high": 633.44, "low": 628.13, "close": 632.78, "volume": 64357525, "ema_8": 630.69, "ema_21": 627.52, "sma_50": 614.22, "bb_upper": 639.43, "bb_middle": 629.6, "bb_lower": 619.77}, {"date": "2025-08-07", "open": 636.24, "high": 636.98, "low": 629.11, "close": 632.25, "volume": 74205791, "ema_8": 631.04, "ema_21": 627.95, "sma_50": 615.05, "bb_upper": 639.65, "bb_middle": 629.92, "bb_lower": 620.19}, {"date": "2025-08-08", "open": 634.06, "high": 637.64, "low": 633.74, "close": 637.18, "volume": 64051626, "ema_8": 632.4, "ema_21": 628.79, "sma_50": 616.04, "bb_upper": 640.37, "bb_middle": 630.6, "bb_lower": 620.83}, {"date": "2025-08-11", "open": 637.46, "high": 638.95, "low": 634.66, "close": 635.92, "volume": 58742300, "ema_8": 633.18, "ema_21": 629.44, "sma_50": 616.95, "bb_upper": 640.8, "bb_middle": 631.15, "bb_lower": 621.5}, {"date": "2025-08-12", "open": 638.29, "high": 642.85, "low": 636.79, "close": 642.69, "volume": 64821798, "ema_8": 635.3, "ema_21": 630.64, "sma_50": 618.02, "bb_upper": 642.16, "bb_middle": 632.18, "bb_lower": 622.2}, {"date": "2025-08-13", "open": 644.91, "high": 646.19, "low": 642.68, "close": 644.89, "volume": 60092790, "ema_8": 637.43, "ema_21": 631.94, "sma_50": 619.06, "bb_upper": 643.97, "bb_middle": 633.21, "bb_lower": 622.46}, {"date": "2025-08-14", "open": 642.79, "high": 645.62, "low": 642.34, "close": 644.95, "volume": 59327466, "ema_8": 639.1, "ema_21": 633.12, "sma_50": 620.04, "bb_upper": 645.73, "bb_middle": 634.06, "bb_lower": 622.39}, {"date": "2025-08-15", "open": 645.99, "high": 646.09, "low": 642.52, "close": 643.44, "volume": 68592507, "ema_8": 640.06, "ema_21": 634.06, "sma_50": 620.99, "bb_upper": 646.82, "bb_middle": 634.85, "bb_lower": 622.89}, {"date": "2025-08-18", "open": 642.86, "high": 644.0, "low": 642.18, "close": 643.3, "volume": 43804914, "ema_8": 640.78, "ema_21": 634.9, "sma_50": 621.99, "bb_upper": 647.75, "bb_middle": 635.58, "bb_lower": 623.41}, {"date": "2025-08-19", "open": 643.12, "high": 644.11, "low": 638.48, "close": 639.81, "volume": 69750731, "ema_8": 640.57, "ema_21": 635.35, "sma_50": 622.81, "bb_upper": 648.01, "bb_middle": 636.13, "bb_lower": 624.25}, {"date": "2025-08-20", "open": 639.4, "high": 639.66, "low": 632.95, "close": 638.11, "volume": 88890298, "ema_8": 640.02, "ema_21": 635.6, "sma_50": 623.58, "bb_upper": 648.2, "bb_middle": 636.32, "bb_lower": 624.45}, {"date": "2025-08-21", "open": 636.28, "high": 637.97, "low": 633.81, "close": 635.55, "volume": 54805775, "ema_8": 639.03, "ema_21": 635.59, "sma_50": 624.23, "bb_upper": 648.23, "bb_middle": 636.38, "bb_lower": 624.53}, {"date": "2025-08-22", "open": 637.76, "high": 646.5, "low": 637.25, "close": 645.31, "volume": 84083214, "ema_8": 640.42, "ema_21": 636.48, "sma_50": 625.11, "bb_upper": 649.29, "bb_middle": 636.79, "bb_lower": 624.29}, {"date": "2025-08-25", "open": 644.04, "high": 645.29, "low": 642.35, "close": 642.47, "volume": 51274332, "ema_8": 640.88, "ema_21": 637.02, "sma_50": 625.88, "bb_upper": 649.83, "bb_middle": 637.07, "bb_lower": 624.31}, {"date": "2025-08-26", "open": 642.2, "high": 645.51, "low": 641.57, "close": 645.16, "volume": 51581565, "ema_8": 641.83, "ema_21": 637.76, "sma_50": 626.84, "bb_upper": 650.79, "bb_middle": 637.56, "bb_lower": 624.34}, {"date": "2025-08-27", "open": 644.57, "high": 647.37, "low": 644.42, "close": 646.63, "volume": 48341069, "ema_8": 642.9, "ema_21": 638.57, "sma_50": 627.72, "bb_upper": 651.9, "bb_middle": 638.17, "bb_lower": 624.43}, {"date": "2025-08-28", "open": 647.24, "high": 649.48, "low": 645.34, "close": 648.92, "volume": 61519461, "ema_8": 644.24, "ema_21": 639.51, "sma_50": 628.75, "bb_upper": 653.23, "bb_middle": 639.01, "bb_lower": 624.79}, {"date": "2025-08-29", "open": 647.47, "high": 647.84, "low": 643.14, "close": 645.05, "volume": 74522192, "ema_8": 644.42, "ema_21": 640.01, "sma_50": 629.7, "bb_upper": 652.06, "bb_middle": 640.18, "bb_lower": 628.3}, {"date": "2025-09-02", "open": 637.5, "high": 640.49, "low": 634.92, "close": 640.27, "volume": 81983545, "ema_8": 643.49, "ema_21": 640.04, "sma_50": 630.62, "bb_upper": 651.73, "bb_middle": 640.63, "bb_lower": 629.53}, {"date": "2025-09-03", "open": 642.67, "high": 644.21, "low": 640.46, "close": 643.74, "volume": 70820898, "ema_8": 643.55, "ema_21": 640.37, "sma_50": 631.49, "bb_upper": 650.85, "bb_middle": 641.42, "bb_lower": 631.99}, {"date": "2025-09-04", "open": 644.42, "high": 649.15, "low": 643.51, "close": 649.12, "volume": 65219228, "ema_8": 644.79, "ema_21": 641.17, "sma_50": 632.34, "bb_upper": 651.34, "bb_middle": 642.24, "bb_lower": 633.14}, {"date": "2025-09-05", "open": 651.48, "high": 652.21, "low": 643.33, "close": 647.24, "volume": 85178935, "ema_8": 645.33, "ema_21": 641.72, "sma_50": 633.14, "bb_upper": 651.03, "bb_middle": 642.99, "bb_lower": 634.94}, {"date": "2025-09-08", "open": 648.62, "high": 649.84, "low": 647.23, "close": 648.83, "volume": 63133104, "ema_8": 646.11, "ema_21": 642.37, "sma_50": 633.88, "bb_upper": 651.53, "bb_middle": 643.57, "bb_lower": 635.61}, {"date": "2025-09-09", "open": 648.97, "high": 650.86, "low": 647.22, "close": 650.33, "volume": 66133856, "ema_8": 647.05, "ema_21": 643.09, "sma_50": 634.59, "bb_upper": 651.94, "bb_middle": 644.29, "bb_lower": 636.64}, {"date": "2025-09-10", "open": 653.62, "high": 654.55, "low": 650.63, "close": 652.21, "volume": 78034529, "ema_8": 648.19, "ema_21": 643.92, "sma_50": 635.28, "bb_upper": 653.15, "bb_middle": 644.77, "bb_lower": 636.39}, {"date": "2025-09-11", "open": 654.18, "high": 658.33, "low": 653.59, "close": 657.63, "volume": 69934360, "ema_8": 650.29, "ema_21": 645.17, "sma_50": 636.08, "bb_upper": 655.57, "bb_middle": 645.4, "bb_lower": 635.24}, {"date": "2025-09-12", "open": 657.6, "high": 659.11, "low": 656.9, "close": 657.41, "volume": 72780135, "ema_8": 651.87, "ema_21": 646.28, "sma_50": 636.82, "bb_upper": 657.52, "bb_middle": 646.03, "bb_lower": 634.54}, {"date": "2025-09-15", "open": 659.64, "high": 661.04, "low": 659.34, "close": 660.91, "volume": 63772412, "ema_8": 653.88, "ema_21": 647.61, "sma_50": 637.53, "bb_upper": 660.09, "bb_middle": 646.9, "bb_lower": 633.71}, {"date": "2025-09-16", "open": 661.47, "high": 661.78, "low": 659.21, "close": 660.0, "volume": 61168953, "ema_8": 655.24, "ema_21": 648.74, "sma_50": 638.31, "bb_upper": 662.03, "bb_middle": 647.73, "bb_lower": 633.44}, {"date": "2025-09-17", "open": 660.01, "high": 661.72, "low": 654.3, "close": 659.18, "volume": 101952244, "ema_8": 656.12, "ema_21": 649.68, "sma_50": 639.09, "bb_upper": 663.36, "bb_middle": 648.7, "bb_lower": 634.04}, {"date": "2025-09-18", "open": 661.89, "high": 664.89, "low": 660.27, "close": 662.26, "volume": 90459242, "ema_8": 657.48, "ema_21": 650.83, "sma_50": 639.85, "bb_upper": 664.87, "bb_middle": 649.91, "bb_lower": 634.95}, {"date": "2025-09-19", "open": 662.33, "high": 664.55, "low": 660.37, "close": 663.7, "volume": 97945620, "ema_8": 658.86, "ema_21": 652.0, "sma_50": 640.61, "bb_upper": 665.88, "bb_middle": 651.32, "bb_lower": 636.76}, {"date": "2025-09-22", "open": 662.2, "high": 667.29, "low": 662.17, "close": 666.84, "volume": 69452201, "ema_8": 660.64, "ema_21": 653.35, "sma_50": 641.48, "bb_upper": 668.22, "bb_middle": 652.39, "bb_lower": 636.57}, {"date": "2025-09-23", "open": 666.72, "high": 667.34, "low": 661.98, "close": 663.21, "volume": 81708872, "ema_8": 661.21, "ema_21": 654.24, "sma_50": 642.24, "bb_upper": 669.23, "bb_middle": 653.43, "bb_lower": 637.63}, {"date": "2025-09-24", "open": 664.51, "high": 664.61, "low": 659.67, "close": 661.1, "volume": 68082229, "ema_8": 661.18, "ema_21": 654.87, "sma_50": 643.02, "bb_upper": 669.88, "bb_middle": 654.23, "bb_lower": 638.58}, {"date": "2025-09-25", "open": 657.94, "high": 659.41, "low": 654.4, "close": 658.05, "volume": 89622067, "ema_8": 660.49, "ema_21": 655.16, "sma_50": 643.7, "bb_upper": 670.11, "bb_middle": 654.8, "bb_lower": 639.49}, {"date": "2025-09-26", "open": 659.51, "high": 662.37, "low": 657.88, "close": 661.82, "volume": 69179209, "ema_8": 660.78, "ema_21": 655.76, "sma_50": 644.38, "bb_upper": 670.8, "bb_middle": 655.44, "bb_lower": 640.09}, {"date": "2025-09-29", "open": 664.36, "high": 665.28, "low": 661.86, "close": 663.68, "volume": 73499015, "ema_8": 661.43, "ema_21": 656.48, "sma_50": 645.1, "bb_upper": 671.33, "bb_middle": 656.38, "bb_lower": 641.42}, {"date": "2025-09-30", "open": 662.93, "high": 666.65, "low": 661.61, "close": 666.18, "volume": 86288028, "ema_8": 662.48, "ema_21": 657.36, "sma_50": 645.85, "bb_upper": 671.17, "bb_middle": 657.67, "bb_lower": 644.17}, {"date": "2025-10-01", "open": 663.17, "high": 669.37, "low": 663.06, "close": 668.45, "volume": 72545369, "ema_8": 663.81, "ema_21": 658.37, "sma_50": 646.64, "bb_upper": 671.54, "bb_middle": 658.91, "bb_lower": 646.28}, {"date": "2025-10-02", "open": 670.45, "high": 670.57, "low": 666.78, "close": 669.22, "volume": 56895993, "ema_8": 665.01, "ema_21": 659.36, "sma_50": 647.34, "bb_upper": 672.46, "bb_middle": 659.91, "bb_lower": 647.37}, {"date": "2025-10-03", "open": 669.99, "high": 672.67, "low": 668.16, "close": 669.21, "volume": 70494350, "ema_8": 665.94, "ema_21": 660.25, "sma_50": 648.03, "bb_upper": 672.7, "bb_middle": 661.01, "bb_lower": 649.32}, {"date": "2025-10-06", "open": 671.62, "high": 672.51, "low": 669.46, "close": 671.61, "volume": 54623260, "ema_8": 667.2, "ema_21": 661.29, "sma_50": 648.72, "bb_upper": 673.27, "bb_middle": 662.15, "bb_lower": 651.03}, {"date": "2025-10-07", "open": 672.54, "high": 672.99, "low": 667.67, "close": 669.12, "volume": 72020067, "ema_8": 667.63, "ema_21": 662.0, "sma_50": 649.37, "bb_upper": 673.13, "bb_middle": 663.09, "bb_lower": 653.05}, {"date": "2025-10-08", "open": 670.25, "high": 673.21, "low": 669.42, "close": 673.11, "volume": 60702241, "ema_8": 668.85, "ema_21": 663.01, "sma_50": 650.12, "bb_upper": 673.75, "bb_middle": 664.13, "bb_lower": 654.52}, {"date": "2025-10-09", "open": 673.53, "high": 673.94, "low": 669.21, "close": 671.16, "volume": 66501941, "ema_8": 669.36, "ema_21": 663.75, "sma_50": 650.86, "bb_upper": 674.4, "bb_middle": 664.81, "bb_lower": 655.22}, {"date": "2025-10-10", "open": 672.13, "high": 673.95, "low": 652.84, "close": 653.02, "volume": 159422589, "ema_8": 665.73, "ema_21": 662.77, "sma_50": 651.28, "bb_upper": 675.06, "bb_middle": 664.59, "bb_lower": 654.13}, {"date": "2025-10-13", "open": 660.65, "high": 665.13, "low": 659.77, "close": 663.04, "volume": 79560517, "ema_8": 665.13, "ema_21": 662.8, "sma_50": 652.1, "bb_upper": 675.05, "bb_middle": 664.7, "bb_lower": 654.35}]};
         const qqqData = {"symbol": "QQQ", "data": [{"date": "2025-07-16", "open": 557.28, "high": 560.21, "low": 551.56, "close": 557.29, "volume": 52314711, "ema_8": 554.73, "ema_21": 547.07, "sma_50": 528.63, "bb_upper": 567.64, "bb_middle": 546.9, "bb_lower": 526.15}, {"date": "2025-07-17", "open": 558.02, "high": 562.31, "low": 557.21, "close": 561.8, "volume": 40423778, "ema_8": 556.3, "ema_21": 548.41, "sma_50": 530.15, "bb_upper": 568.51, "bb_middle": 548.53, "bb_lower": 528.56}, {"date": "2025-07-18", "open": 563.12, "high": 564.73, "low": 559.98, "close": 561.26, "volume": 50484704, "ema_8": 557.4, "ema_21": 549.58, "sma_50": 531.75, "bb_upper": 568.63, "bb_middle": 550.15, "bb_lower": 531.66}, {"date": "2025-07-21", "open": 562.09, "high": 566.06, "low": 562.06, "close": 564.17, "volume": 39595214, "ema_8": 558.91, "ema_21": 550.91, "sma_50": 533.37, "bb_upper": 567.95, "bb_middle": 552.01, "bb_lower": 536.07}, {"date": "2025-07-22", "open": 564.3, "high": 564.35, "low": 558.61, "close": 561.25, "volume": 43270647, "ema_8": 559.43, "ema_21": 551.85, "sma_50": 534.82, "bb_upper": 566.74, "bb_middle": 553.49, "bb_lower": 540.24}, {"date": "2025-07-23", "open": 562.34, "high": 563.85, "low": 559.58, "close": 563.81, "volume": 40215259, "ema_8": 560.4, "ema_21": 552.93, "sma_50": 536.34, "bb_upper": 567.03, "bb_middle": 554.69, "bb_lower": 542.36}, {"date": "2025-07-24", "open": 565.13, "high": 566.24, "low": 563.29, "close": 565.01, "volume": 42275541, "ema_8": 561.43, "ema_21": 554.03, "sma_50": 537.48, "bb_upper": 567.29, "bb_middle": 555.89, "bb_lower": 544.48}, {"date": "2025-07-25", "open": 564.93, "high": 567.7, "low": 564.27, "close": 566.37, "volume": 30630813, "ema_8": 562.52, "ema_21": 555.15, "sma_50": 538.5, "bb_upper": 568.27, "bb_middle": 556.89, "bb_lower": 545.52}, {"date": "2025-07-28", "open": 567.74, "high": 569.04, "low": 566.87, "close": 568.14, "volume": 31498739, "ema_8": 563.77, "ema_21": 556.33, "sma_50": 539.49, "bb_upper": 569.53, "bb_middle": 557.9, "bb_lower": 546.26}, {"date": "2025-07-29", "open": 570.76, "high": 572.11, "low": 566.53, "close": 567.26, "volume": 45463317, "ema_8": 564.55, "ema_21": 557.33, "sma_50": 540.45, "bb_upper": 570.64, "bb_middle": 558.68, "bb_lower": 546.72}, {"date": "2025-07-30", "open": 568.18, "high": 570.62, "low": 565.05, "close": 568.02, "volume": 43433777, "ema_8": 565.32, "ema_21": 558.3, "sma_50": 541.38, "bb_upper": 571.04, "bb_middle": 559.73, "bb_lower": 548.42}, {"date": "2025-07-31", "open": 574.54, "high": 574.63, "low": 563.87, "close": 565.01, "volume": 64613590, "ema_8": 565.25, "ema_21": 558.91, "sma_50": 542.24, "bb_upper": 571.16, "bb_middle": 560.44, "bb_lower": 549.72}, {"date": "2025-08-01", "open": 558.83, "high": 559.02, "low": 551.68, "close": 553.88, "volume": 69400789, "ema_8": 562.72, "ema_21": 558.45, "sma_50": 542.91, "bb_upper": 571.29, "bb_middle": 560.32, "bb_lower": 549.36}, {"date": "2025-08-04", "open": 559.05, "high": 564.32, "low": 558.95, "close": 564.1, "volume": 47669751, "ema_8": 563.03, "ema_21": 558.97, "sma_50": 543.93, "bb_upper": 571.28, "bb_middle": 560.93, "bb_lower": 550.58}, {"date": "2025-08-05", "open": 565.39, "high": 566.56, "low": 559.73, "close": 560.27, "volume": 48666640, "ema_8": 562.42, "ema_21": 559.08, "sma_50": 544.86, "bb_upper": 570.87, "bb_middle": 561.32, "bb_lower": 551.78}, {"date": "2025-08-06", "open": 561.11, "high": 567.76, "low": 560.63, "close": 567.32, "volume": 41823677, "ema_8": 563.51, "ema_21": 559.83, "sma_50": 546.02, "bb_upper": 571.46, "bb_middle": 561.88, "bb_lower": 552.29}, {"date": "2025-08-07", "open": 571.67, "high": 573.32, "low": 565.11, "close": 569.24, "volume": 44462972, "ema_8": 564.78, "ema_21": 560.69, "sma_50": 546.98, "bb_upper": 572.19, "bb_middle": 562.57, "bb_lower": 552.94}, {"date": "2025-08-08", "open": 570.45, "high": 574.77, "low": 570.15, "close": 574.55, "volume": 35255472, "ema_8": 566.95, "ema_21": 561.95, "sma_50": 548.09, "bb_upper": 573.77, "bb_middle": 563.58, "bb_lower": 553.4}, {"date": "2025-08-11", "open": 574.69, "high": 576.8, "low": 571.57, "close": 572.85, "volume": 33112917, "ema_8": 568.26, "ema_21": 562.94, "sma_50": 549.15, "bb_upper": 574.78, "bb_middle": 564.42, "bb_lower": 554.05}, {"date": "2025-08-12", "open": 575.16, "high": 580.35, "low": 572.49, "close": 580.05, "volume": 42271441, "ema_8": 570.88, "ema_21": 564.5, "sma_50": 550.37, "bb_upper": 577.45, "bb_middle": 565.58, "bb_lower": 553.72}, {"date": "2025-08-13", "open": 582.76, "high": 583.32, "low": 578.94, "close": 580.34, "volume": 41209294, "ema_8": 572.98, "ema_21": 565.94, "sma_50": 551.51, "bb_upper": 579.64, "bb_middle": 566.74, "bb_lower": 553.83}, {"date": "2025-08-14", "open": 578.28, "high": 581.88, "low": 577.91, "close": 579.89, "volume": 45425043, "ema_8": 574.52, "ema_21": 567.2, "sma_50": 552.56, "bb_upper": 581.58, "bb_middle": 567.64, "bb_lower": 553.7}, {"date": "2025-08-15", "open": 579.8, "high": 579.84, "low": 575.57, "close": 577.34, "volume": 49480161, "ema_8": 575.15, "ema_21": 568.13, "sma_50": 553.54, "bb_upper": 582.69, "bb_middle": 568.44, "bb_lower": 554.2}, {"date": "2025-08-18", "open": 576.44, "high": 577.76, "low": 575.24, "close": 577.11, "volume": 29830957, "ema_8": 575.58, "ema_21": 568.94, "sma_50": 554.58, "bb_upper": 583.69, "bb_middle": 569.09, "bb_lower": 554.49}, {"date": "2025-08-19", "open": 576.39, "high": 576.56, "low": 568.25, "close": 569.28, "volume": 53752635, "ema_8": 574.18, "ema_21": 568.97, "sma_50": 555.37, "bb_upper": 583.62, "bb_middle": 569.49, "bb_lower": 555.37}, {"date": "2025-08-20", "open": 568.33, "high": 568.45, "low": 558.84, "close": 565.9, "volume": 76781087, "ema_8": 572.34, "ema_21": 568.69, "sma_50": 556.07, "bb_upper": 583.57, "bb_middle": 569.6, "bb_lower": 555.62}, {"date": "2025-08-21", "open": 564.35, "high": 566.49, "low": 560.98, "close": 563.28, "volume": 46436899, "ema_8": 570.33, "ema_21": 568.2, "sma_50": 556.66, "bb_upper": 583.63, "bb_middle": 569.51, "bb_lower": 555.39}, {"date": "2025-08-22", "open": 564.67, "high": 573.99, "low": 563.27, "close": 571.97, "volume": 51502129, "ema_8": 570.69, "ema_21": 568.54, "sma_50": 557.45, "bb_upper": 583.87, "bb_middle": 569.79, "bb_lower": 555.71}, {"date": "2025-08-25", "open": 570.4, "high": 573.29, "low": 569.16, "close": 570.32, "volume": 34044749, "ema_8": 570.61, "ema_21": 568.71, "sma_50": 558.18, "bb_upper": 583.96, "bb_middle": 569.9, "bb_lower": 555.84}, {"date": "2025-08-26", "open": 569.83, "high": 572.92, "low": 568.8, "close": 572.61, "volume": 34103014, "ema_8": 571.05, "ema_21": 569.06, "sma_50": 559.09, "bb_upper": 584.22, "bb_middle": 570.17, "bb_lower": 556.12}, {"date": "2025-08-27", "open": 571.59, "high": 574.4, "low": 570.37, "close": 573.49, "volume": 36927144, "ema_8": 571.6, "ema_21": 569.46, "sma_50": 559.88, "bb_upper": 584.53, "bb_middle": 570.44, "bb_lower": 556.35}, {"date": "2025-08-28", "open": 574.11, "high": 578.0, "low": 572.46, "close": 577.08, "volume": 46787857, "ema_8": 572.81, "ema_21": 570.16, "sma_50": 560.84, "bb_upper": 585.18, "bb_middle": 571.04, "bb_lower": 556.9}, {"date": "2025-08-29", "open": 574.65, "high": 575.03, "low": 568.54, "close": 570.4, "volume": 56030409, "ema_8": 572.28, "ema_21": 570.18, "sma_50": 561.66, "bb_upper": 583.5, "bb_middle": 571.87, "bb_lower": 560.24}, {"date": "2025-09-02", "open": 561.31, "high": 565.97, "low": 559.53, "close": 565.62, "volume": 65876765, "ema_8": 570.8, "ema_21": 569.76, "sma_50": 562.44, "bb_upper": 583.38, "bb_middle": 571.95, "bb_lower": 560.51}, {"date": "2025-09-03", "open": 569.23, "high": 571.7, "low": 566.73, "close": 570.07, "volume": 54230213, "ema_8": 570.64, "ema_21": 569.79, "sma_50": 563.21, "bb_upper": 582.52, "bb_middle": 572.44, "bb_lower": 562.35}, {"date": "2025-09-04", "open": 570.74, "high": 575.6, "low": 569.02, "close": 575.23, "volume": 47526280, "ema_8": 571.66, "ema_21": 570.29, "sma_50": 563.92, "bb_upper": 582.69, "bb_middle": 572.83, "bb_lower": 562.97}, {"date": "2025-09-05", "open": 580.49, "high": 581.12, "low": 571.53, "close": 576.06, "volume": 68342532, "ema_8": 572.64, "ema_21": 570.81, "sma_50": 564.62, "bb_upper": 582.98, "bb_middle": 573.17, "bb_lower": 563.37}, {"date": "2025-09-08", "open": 578.37, "high": 580.84, "low": 577.77, "close": 578.87, "volume": 46371354, "ema_8": 574.02, "ema_21": 571.54, "sma_50": 565.27, "bb_upper": 583.51, "bb_middle": 573.39, "bb_lower": 563.27}, {"date": "2025-09-09", "open": 579.67, "high": 580.94, "low": 577.04, "close": 580.51, "volume": 44007592, "ema_8": 575.46, "ema_21": 572.36, "sma_50": 565.92, "bb_upper": 584.37, "bb_middle": 573.77, "bb_lower": 563.17}, {"date": "2025-09-10", "open": 583.74, "high": 583.77, "low": 578.55, "close": 580.7, "volume": 49307959, "ema_8": 576.63, "ema_21": 573.12, "sma_50": 566.5, "bb_upper": 584.49, "bb_middle": 573.8, "bb_lower": 563.12}, {"date": "2025-09-11", "open": 583.24, "high": 584.88, "low": 581.62, "close": 584.08, "volume": 44745766, "ema_8": 578.28, "ema_21": 574.11, "sma_50": 567.24, "bb_upper": 585.27, "bb_middle": 573.99, "bb_lower": 562.71}, {"date": "2025-09-12", "open": 585.04, "high": 587.86, "low": 584.1, "close": 586.66, "volume": 50745886, "ema_8": 580.14, "ema_21": 575.25, "sma_50": 567.96, "bb_upper": 586.71, "bb_middle": 574.33, "bb_lower": 561.95}, {"date": "2025-09-15", "open": 588.44, "high": 591.79, "low": 588.29, "close": 591.68, "volume": 44360315, "ema_8": 582.71, "ema_21": 576.75, "sma_50": 568.67, "bb_upper": 589.63, "bb_middle": 575.05, "bb_lower": 560.47}, {"date": "2025-09-16", "open": 592.61, "high": 592.86, "low": 590.49, "close": 591.18, "volume": 36942130, "ema_8": 584.59, "ema_21": 578.06, "sma_50": 569.45, "bb_upper": 592.01, "bb_middle": 575.75, "bb_lower": 559.49}, {"date": "2025-09-17", "open": 591.1, "high": 591.75, "low": 584.37, "close": 590.0, "volume": 69384820, "ema_8": 585.79, "ema_21": 579.14, "sma_50": 570.2, "bb_upper": 593.93, "bb_middle": 576.79, "bb_lower": 559.64}, {"date": "2025-09-18", "open": 594.91, "high": 598.14, "low": 592.96, "close": 595.32, "volume": 61069294, "ema_8": 587.91, "ema_21": 580.62, "sma_50": 570.98, "bb_upper": 596.48, "bb_middle": 578.26, "bb_lower": 560.03}, {"date": "2025-09-19", "open": 597.33, "high": 600.05, "low": 595.85, "close": 599.35, "volume": 58196109, "ema_8": 590.45, "ema_21": 582.32, "sma_50": 571.86, "bb_upper": 599.16, "bb_middle": 580.06, "bb_lower": 560.96}, {"date": "2025-09-22", "open": 597.74, "high": 602.87, "low": 597.72, "close": 602.2, "volume": 57154769, "ema_8": 593.06, "ema_21": 584.13, "sma_50": 572.82, "bb_upper": 602.66, "bb_middle": 581.57, "bb_lower": 560.48}, {"date": "2025-09-23", "open": 602.37, "high": 602.57, "low": 596.98, "close": 598.2, "volume": 64635486, "ema_8": 594.2, "ema_21": 585.41, "sma_50": 573.66, "bb_upper": 604.6, "bb_middle": 582.97, "bb_lower": 561.33}, {"date": "2025-09-24", "open": 599.58, "high": 599.9, "low": 593.36, "close": 596.1, "volume": 49850301, "ema_8": 594.63, "ema_21": 586.38, "sma_50": 574.45, "bb_upper": 605.96, "bb_middle": 584.14, "bb_lower": 562.32}, {"date": "2025-09-25", "open": 592.2, "high": 595.12, "low": 588.5, "close": 593.53, "volume": 70920209, "ema_8": 594.38, "ema_21": 587.03, "sma_50": 575.17, "bb_upper": 606.74, "bb_middle": 585.14, "bb_lower": 563.55}, {"date": "2025-09-26", "open": 594.35, "high": 596.3, "low": 591.06, "close": 595.97, "volume": 54337416, "ema_8": 594.74, "ema_21": 587.84, "sma_50": 575.86, "bb_upper": 607.85, "bb_middle": 586.09, "bb_lower": 564.32}, {"date": "2025-09-29", "open": 599.11, "high": 602.05, "low": 597.41, "close": 598.73, "volume": 48332934, "ema_8": 595.62, "ema_21": 588.83, "sma_50": 576.61, "bb_upper": 608.65, "bb_middle": 587.5, "bb_lower": 566.36}, {"date": "2025-09-30", "open": 598.43, "high": 600.71, "low": 596.1, "close": 600.37, "volume": 46533814, "ema_8": 596.68, "ema_21": 589.88, "sma_50": 577.33, "bb_upper": 608.43, "bb_middle": 589.24, "bb_lower": 570.05}, {"date": "2025-10-01", "open": 597.17, "high": 603.79, "low": 596.34, "close": 603.25, "volume": 46899612, "ema_8": 598.14, "ema_21": 591.1, "sma_50": 578.17, "bb_upper": 608.81, "bb_middle": 590.9, "bb_lower": 572.99}, {"date": "2025-10-02", "open": 607.06, "high": 607.16, "low": 602.93, "close": 605.73, "volume": 43765410, "ema_8": 599.83, "ema_21": 592.43, "sma_50": 579.01, "bb_upper": 609.91, "bb_middle": 592.42, "bb_lower": 574.94}, {"date": "2025-10-03", "open": 606.51, "high": 607.33, "low": 601.38, "close": 603.18, "volume": 46482098, "ema_8": 600.57, "ema_21": 593.4, "sma_50": 579.77, "bb_upper": 610.08, "bb_middle": 593.78, "bb_lower": 577.48}, {"date": "2025-10-06", "open": 608.45, "high": 609.36, "low": 605.97, "close": 607.71, "volume": 41962115, "ema_8": 602.16, "ema_21": 594.7, "sma_50": 580.6, "bb_upper": 611.07, "bb_middle": 595.22, "bb_lower": 579.38}, {"date": "2025-10-07", "open": 609.02, "high": 609.71, "low": 603.03, "close": 604.51, "volume": 58209463, "ema_8": 602.68, "ema_21": 595.6, "sma_50": 581.33, "bb_upper": 611.17, "bb_middle": 596.42, "bb_lower": 581.67}, {"date": "2025-10-08", "open": 605.41, "high": 611.75, "low": 605.26, "close": 611.44, "volume": 50629754, "ema_8": 604.63, "ema_21": 597.04, "sma_50": 582.21, "bb_upper": 612.21, "bb_middle": 597.96, "bb_lower": 583.71}, {"date": "2025-10-09", "open": 611.48, "high": 611.61, "low": 607.48, "close": 610.7, "volume": 45550958, "ema_8": 605.98, "ema_21": 598.28, "sma_50": 583.06, "bb_upper": 613.05, "bb_middle": 599.29, "bb_lower": 585.53}, {"date": "2025-10-10", "open": 611.4, "high": 613.18, "low": 589.05, "close": 589.5, "volume": 97614783, "ema_8": 602.31, "ema_21": 597.48, "sma_50": 583.55, "bb_upper": 612.69, "bb_middle": 599.43, "bb_lower": 586.17}, {"date": "2025-10-13", "open": 599.68, "high": 602.95, "low": 597.23, "close": 602.01, "volume": 65872584, "ema_8": 602.25, "ema_21": 597.89, "sma_50": 584.52, "bb_upper": 612.73, "bb_middle": 599.95, "bb_lower": 587.17}]};
-        const spyScorecardData = {"v1_scorecard": [{"date": "2025-07-16", "value": 4}, {"date": "2025-07-17", "value": 5}, {"date": "2025-07-18", "value": 5}, {"date": "2025-07-21", "value": 5}, {"date": "2025-07-22", "value": 5}, {"date": "2025-07-23", "value": 5}, {"date": "2025-07-24", "value": 5}, {"date": "2025-07-25", "value": 6}, {"date": "2025-07-28", "value": 5}, {"date": "2025-07-29", "value": 5}, {"date": "2025-07-30", "value": 5}, {"date": "2025-07-31", "value": 4}, {"date": "2025-08-01", "value": 4}, {"date": "2025-08-04", "value": 4}, {"date": "2025-08-05", "value": 4}, {"date": "2025-08-06", "value": 4}, {"date": "2025-08-07", "value": 4}, {"date": "2025-08-08", "value": 5}, {"date": "2025-08-11", "value": 4}, {"date": "2025-08-12", "value": 5}, {"date": "2025-08-13", "value": 5}, {"date": "2025-08-14", "value": 5}, {"date": "2025-08-15", "value": 6}, {"date": "2025-08-18", "value": 4}, {"date": "2025-08-19", "value": 3}, {"date": "2025-08-20", "value": 4}, {"date": "2025-08-21", "value": 4}, {"date": "2025-08-22", "value": 6}, {"date": "2025-08-25", "value": 5}, {"date": "2025-08-26", "value": 5}, {"date": "2025-08-27", "value": 5}, {"date": "2025-08-28", "value": 5}, {"date": "2025-08-29", "value": 6}, {"date": "2025-09-02", "value": 5}, {"date": "2025-09-03", "value": 5}, {"date": "2025-09-04", "value": 5}, {"date": "2025-09-05", "value": 6}, {"date": "2025-09-08", "value": 5}, {"date": "2025-09-09", "value": 5}, {"date": "2025-09-10", "value": 5}, {"date": "2025-09-11", "value": 5}, {"date": "2025-09-12", "value": 6}, {"date": "2025-09-15", "value": 5}, {"date": "2025-09-16", "value": 5}, {"date": "2025-09-17", "value": 5}, {"date": "2025-09-18", "value": 5}, {"date": "2025-09-19", "value": 6}, {"date": "2025-09-22", "value": 5}, {"date": "2025-09-23", "value": 5}, {"date": "2025-09-24", "value": 5}, {"date": "2025-09-25", "value": 3}, {"date": "2025-09-26", "value": 6}, {"date": "2025-09-29", "value": 5}, {"date": "2025-09-30", "value": 5}, {"date": "2025-10-01", "value": 5}, {"date": "2025-10-02", "value": 5}, {"date": "2025-10-03", "value": 6}, {"date": "2025-10-06", "value": 5}, {"date": "2025-10-07", "value": 5}, {"date": "2025-10-08", "value": 5}, {"date": "2025-10-09", "value": 5}, {"date": "2025-10-10", "value": 5}, {"date": "2025-10-13", "value": 5}], "v2_scorecard": [{"date": "2025-07-16", "value": 5}, {"date": "2025-07-17", "value": 6}, {"date": "2025-07-18", "value": 7}, {"date": "2025-07-21", "value": 7}, {"date": "2025-07-22", "value": 6}, {"date": "2025-07-23", "value": 5}, {"date": "2025-07-24", "value": 6}, {"date": "2025-07-25", "value": 7}, {"date": "2025-07-28", "value": 7}, {"date": "2025-07-29", "value": 6}, {"date": "2025-07-30", "value": 6}, {"date": "2025-07-31", "value": 4}, {"date": "2025-08-01", "value": 3}, {"date": "2025-08-04", "value": 4}, {"date": "2025-08-05", "value": 3}, {"date": "2025-08-06", "value": 5}, {"date": "2025-08-07", "value": 7}, {"date": "2025-08-08", "value": 7}, {"date": "2025-08-11", "value": 7}, {"date": "2025-08-12", "value": 7}, {"date": "2025-08-13", "value": 7}, {"date": "2025-08-14", "value": 7}, {"date": "2025-08-15", "value": 7}, {"date": "2025-08-18", "value": 7}, {"date": "2025-08-19", "value": 4}, {"date": "2025-08-20", "value": 3}, {"date": "2025-08-21", "value": 4}, {"date": "2025-08-22", "value": 4}, {"date": "2025-08-25", "value": 4}, {"date": "2025-08-26", "value": 5}, {"date": "2025-08-27", "value": 6}, {"date": "2025-08-28", "value": 7}, {"date": "2025-08-29", "value": 4}, {"date": "2025-09-02", "value": 3}, {"date": "2025-09-03", "value": 3}, {"date": "2025-09-04", "value": 6}, {"date": "2025-09-05", "value": 7}, {"date": "2025-09-08", "value": 7}, {"date": "2025-09-09", "value": 7}, {"date": "2025-09-10", "value": 7}, {"date": "2025-09-11", "value": 7}, {"date": "2025-09-12", "value": 7}, {"date": "2025-09-15", "value": 7}, {"date": "2025-09-16", "value": 7}, {"date": "2025-09-17", "value": 7}, {"date": "2025-09-18", "value": 7}, {"date": "2025-09-19", "value": 7}, {"date": "2025-09-22", "value": 7}, {"date": "2025-09-23", "value": 7}, {"date": "2025-09-24", "value": 7}, {"date": "2025-09-25", "value": 4}, {"date": "2025-09-26", "value": 6}, {"date": "2025-09-29", "value": 6}, {"date": "2025-09-30", "value": 7}, {"date": "2025-10-01", "value": 7}, {"date": "2025-10-02", "value": 7}, {"date": "2025-10-03", "value": 7}, {"date": "2025-10-06", "value": 7}, {"date": "2025-10-07", "value": 7}, {"date": "2025-10-08", "value": 7}, {"date": "2025-10-09", "value": 7}, {"date": "2025-10-10", "value": 4}, {"date": "2025-10-13", "value": 4}]};
-        const qqqScorecardData = {"v1_scorecard": [{"date": "2025-07-16", "value": 4}, {"date": "2025-07-17", "value": 5}, {"date": "2025-07-18", "value": 5}, {"date": "2025-07-21", "value": 5}, {"date": "2025-07-22", "value": 5}, {"date": "2025-07-23", "value": 5}, {"date": "2025-07-24", "value": 5}, {"date": "2025-07-25", "value": 6}, {"date": "2025-07-28", "value": 5}, {"date": "2025-07-29", "value": 5}, {"date": "2025-07-30", "value": 5}, {"date": "2025-07-31", "value": 4}, {"date": "2025-08-01", "value": 4}, {"date": "2025-08-04", "value": 4}, {"date": "2025-08-05", "value": 4}, {"date": "2025-08-06", "value": 4}, {"date": "2025-08-07", "value": 4}, {"date": "2025-08-08", "value": 5}, {"date": "2025-08-11", "value": 4}, {"date": "2025-08-12", "value": 5}, {"date": "2025-08-13", "value": 5}, {"date": "2025-08-14", "value": 5}, {"date": "2025-08-15", "value": 6}, {"date": "2025-08-18", "value": 4}, {"date": "2025-08-19", "value": 3}, {"date": "2025-08-20", "value": 4}, {"date": "2025-08-21", "value": 4}, {"date": "2025-08-22", "value": 6}, {"date": "2025-08-25", "value": 5}, {"date": "2025-08-26", "value": 5}, {"date": "2025-08-27", "value": 5}, {"date": "2025-08-28", "value": 5}, {"date": "2025-08-29", "value": 6}, {"date": "2025-09-02", "value": 5}, {"date": "2025-09-03", "value": 5}, {"date": "2025-09-04", "value": 5}, {"date": "2025-09-05", "value": 6}, {"date": "2025-09-08", "value": 5}, {"date": "2025-09-09", "value": 5}, {"date": "2025-09-10", "value": 5}, {"date": "2025-09-11", "value": 5}, {"date": "2025-09-12", "value": 6}, {"date": "2025-09-15", "value": 5}, {"date": "2025-09-16", "value": 5}, {"date": "2025-09-17", "value": 5}, {"date": "2025-09-18", "value": 5}, {"date": "2025-09-19", "value": 6}, {"date": "2025-09-22", "value": 5}, {"date": "2025-09-23", "value": 5}, {"date": "2025-09-24", "value": 5}, {"date": "2025-09-25", "value": 3}, {"date": "2025-09-26", "value": 6}, {"date": "2025-09-29", "value": 5}, {"date": "2025-09-30", "value": 5}, {"date": "2025-10-01", "value": 5}, {"date": "2025-10-02", "value": 5}, {"date": "2025-10-03", "value": 6}, {"date": "2025-10-06", "value": 5}, {"date": "2025-10-07", "value": 5}, {"date": "2025-10-08", "value": 5}, {"date": "2025-10-09", "value": 5}, {"date": "2025-10-10", "value": 5}, {"date": "2025-10-13", "value": 5}], "v2_scorecard": [{"date": "2025-07-16", "value": 5}, {"date": "2025-07-17", "value": 6}, {"date": "2025-07-18", "value": 7}, {"date": "2025-07-21", "value": 7}, {"date": "2025-07-22", "value": 6}, {"date": "2025-07-23", "value": 5}, {"date": "2025-07-24", "value": 6}, {"date": "2025-07-25", "value": 7}, {"date": "2025-07-28", "value": 7}, {"date": "2025-07-29", "value": 6}, {"date": "2025-07-30", "value": 6}, {"date": "2025-07-31", "value": 4}, {"date": "2025-08-01", "value": 3}, {"date": "2025-08-04", "value": 4}, {"date": "2025-08-05", "value": 3}, {"date": "2025-08-06", "value": 5}, {"date": "2025-08-07", "value": 7}, {"date": "2025-08-08", "value": 7}, {"date": "2025-08-11", "value": 7}, {"date": "2025-08-12", "value": 7}, {"date": "2025-08-13", "value": 7}, {"date": "2025-08-14", "value": 7}, {"date": "2025-08-15", "value": 7}, {"date": "2025-08-18", "value": 7}, {"date": "2025-08-19", "value": 4}, {"date": "2025-08-20", "value": 3}, {"date": "2025-08-21", "value": 4}, {"date": "2025-08-22", "value": 4}, {"date": "2025-08-25", "value": 4}, {"date": "2025-08-26", "value": 5}, {"date": "2025-08-27", "value": 6}, {"date": "2025-08-28", "value": 7}, {"date": "2025-08-29", "value": 4}, {"date": "2025-09-02", "value": 3}, {"date": "2025-09-03", "value": 3}, {"date": "2025-09-04", "value": 6}, {"date": "2025-09-05", "value": 7}, {"date": "2025-09-08", "value": 7}, {"date": "2025-09-09", "value": 7}, {"date": "2025-09-10", "value": 7}, {"date": "2025-09-11", "value": 7}, {"date": "2025-09-12", "value": 7}, {"date": "2025-09-15", "value": 7}, {"date": "2025-09-16", "value": 7}, {"date": "2025-09-17", "value": 7}, {"date": "2025-09-18", "value": 7}, {"date": "2025-09-19", "value": 7}, {"date": "2025-09-22", "value": 7}, {"date": "2025-09-23", "value": 7}, {"date": "2025-09-24", "value": 7}, {"date": "2025-09-25", "value": 4}, {"date": "2025-09-26", "value": 6}, {"date": "2025-09-29", "value": 6}, {"date": "2025-09-30", "value": 7}, {"date": "2025-10-01", "value": 7}, {"date": "2025-10-02", "value": 7}, {"date": "2025-10-03", "value": 7}, {"date": "2025-10-06", "value": 7}, {"date": "2025-10-07", "value": 7}, {"date": "2025-10-08", "value": 7}, {"date": "2025-10-09", "value": 7}, {"date": "2025-10-10", "value": 4}, {"date": "2025-10-13", "value": 4}]};
+        const spyScorecardData = {"v1_scorecard": [{"date": "2025-07-16", "value": 5}, {"date": "2025-07-17", "value": 5}, {"date": "2025-07-18", "value": 5}, {"date": "2025-07-21", "value": 5}, {"date": "2025-07-22", "value": 5}, {"date": "2025-07-23", "value": 5}, {"date": "2025-07-24", "value": 5}, {"date": "2025-07-25", "value": 6}, {"date": "2025-07-28", "value": 5}, {"date": "2025-07-29", "value": 5}, {"date": "2025-07-30", "value": 5}, {"date": "2025-07-31", "value": 4}, {"date": "2025-08-01", "value": 4}, {"date": "2025-08-04", "value": 4}, {"date": "2025-08-05", "value": 4}, {"date": "2025-08-06", "value": 4}, {"date": "2025-08-07", "value": 4}, {"date": "2025-08-08", "value": 5}, {"date": "2025-08-11", "value": 4}, {"date": "2025-08-12", "value": 5}, {"date": "2025-08-13", "value": 5}, {"date": "2025-08-14", "value": 5}, {"date": "2025-08-15", "value": 6}, {"date": "2025-08-18", "value": 4}, {"date": "2025-08-19", "value": 4}, {"date": "2025-08-20", "value": 4}, {"date": "2025-08-21", "value": 4}, {"date": "2025-08-22", "value": 6}, {"date": "2025-08-25", "value": 5}, {"date": "2025-08-26", "value": 5}, {"date": "2025-08-27", "value": 5}, {"date": "2025-08-28", "value": 5}, {"date": "2025-08-29", "value": 6}, {"date": "2025-09-02", "value": 5}, {"date": "2025-09-03", "value": 5}, {"date": "2025-09-04", "value": 5}, {"date": "2025-09-05", "value": 6}, {"date": "2025-09-08", "value": 5}, {"date": "2025-09-09", "value": 5}, {"date": "2025-09-10", "value": 5}, {"date": "2025-09-11", "value": 5}, {"date": "2025-09-12", "value": 6}, {"date": "2025-09-15", "value": 5}, {"date": "2025-09-16", "value": 5}, {"date": "2025-09-17", "value": 5}, {"date": "2025-09-18", "value": 5}, {"date": "2025-09-19", "value": 6}, {"date": "2025-09-22", "value": 5}, {"date": "2025-09-23", "value": 5}, {"date": "2025-09-24", "value": 5}, {"date": "2025-09-25", "value": 3}, {"date": "2025-09-26", "value": 6}, {"date": "2025-09-29", "value": 5}, {"date": "2025-09-30", "value": 5}, {"date": "2025-10-01", "value": 5}, {"date": "2025-10-02", "value": 5}, {"date": "2025-10-03", "value": 6}, {"date": "2025-10-06", "value": 5}, {"date": "2025-10-07", "value": 5}, {"date": "2025-10-08", "value": 5}, {"date": "2025-10-09", "value": 5}, {"date": "2025-10-10", "value": 5}, {"date": "2025-10-13", "value": 5}], "v2_scorecard": [{"date": "2025-07-16", "value": 4}, {"date": "2025-07-17", "value": 6}, {"date": "2025-07-18", "value": 7}, {"date": "2025-07-21", "value": 7}, {"date": "2025-07-22", "value": 6}, {"date": "2025-07-23", "value": 5}, {"date": "2025-07-24", "value": 6}, {"date": "2025-07-25", "value": 7}, {"date": "2025-07-28", "value": 7}, {"date": "2025-07-29", "value": 6}, {"date": "2025-07-30", "value": 5}, {"date": "2025-07-31", "value": 3}, {"date": "2025-08-01", "value": 3}, {"date": "2025-08-04", "value": 3}, {"date": "2025-08-05", "value": 2}, {"date": "2025-08-06", "value": 4}, {"date": "2025-08-07", "value": 6}, {"date": "2025-08-08", "value": 6}, {"date": "2025-08-11", "value": 6}, {"date": "2025-08-12", "value": 7}, {"date": "2025-08-13", "value": 7}, {"date": "2025-08-14", "value": 6}, {"date": "2025-08-15", "value": 6}, {"date": "2025-08-18", "value": 6}, {"date": "2025-08-19", "value": 3}, {"date": "2025-08-20", "value": 2}, {"date": "2025-08-21", "value": 3}, {"date": "2025-08-22", "value": 4}, {"date": "2025-08-25", "value": 4}, {"date": "2025-08-26", "value": 5}, {"date": "2025-08-27", "value": 6}, {"date": "2025-08-28", "value": 7}, {"date": "2025-08-29", "value": 4}, {"date": "2025-09-02", "value": 2}, {"date": "2025-09-03", "value": 2}, {"date": "2025-09-04", "value": 5}, {"date": "2025-09-05", "value": 7}, {"date": "2025-09-08", "value": 7}, {"date": "2025-09-09", "value": 7}, {"date": "2025-09-10", "value": 7}, {"date": "2025-09-11", "value": 7}, {"date": "2025-09-12", "value": 7}, {"date": "2025-09-15", "value": 7}, {"date": "2025-09-16", "value": 7}, {"date": "2025-09-17", "value": 7}, {"date": "2025-09-18", "value": 7}, {"date": "2025-09-19", "value": 7}, {"date": "2025-09-22", "value": 7}, {"date": "2025-09-23", "value": 7}, {"date": "2025-09-24", "value": 6}, {"date": "2025-09-25", "value": 4}, {"date": "2025-09-26", "value": 5}, {"date": "2025-09-29", "value": 6}, {"date": "2025-09-30", "value": 7}, {"date": "2025-10-01", "value": 7}, {"date": "2025-10-02", "value": 7}, {"date": "2025-10-03", "value": 7}, {"date": "2025-10-06", "value": 7}, {"date": "2025-10-07", "value": 7}, {"date": "2025-10-08", "value": 7}, {"date": "2025-10-09", "value": 7}, {"date": "2025-10-10", "value": 3}, {"date": "2025-10-13", "value": 3}]};
+        const qqqScorecardData = {"v1_scorecard": [{"date": "2025-07-16", "value": 5}, {"date": "2025-07-17", "value": 5}, {"date": "2025-07-18", "value": 5}, {"date": "2025-07-21", "value": 5}, {"date": "2025-07-22", "value": 5}, {"date": "2025-07-23", "value": 5}, {"date": "2025-07-24", "value": 5}, {"date": "2025-07-25", "value": 6}, {"date": "2025-07-28", "value": 5}, {"date": "2025-07-29", "value": 5}, {"date": "2025-07-30", "value": 5}, {"date": "2025-07-31", "value": 4}, {"date": "2025-08-01", "value": 4}, {"date": "2025-08-04", "value": 4}, {"date": "2025-08-05", "value": 4}, {"date": "2025-08-06", "value": 4}, {"date": "2025-08-07", "value": 4}, {"date": "2025-08-08", "value": 5}, {"date": "2025-08-11", "value": 4}, {"date": "2025-08-12", "value": 5}, {"date": "2025-08-13", "value": 5}, {"date": "2025-08-14", "value": 5}, {"date": "2025-08-15", "value": 6}, {"date": "2025-08-18", "value": 4}, {"date": "2025-08-19", "value": 4}, {"date": "2025-08-20", "value": 4}, {"date": "2025-08-21", "value": 4}, {"date": "2025-08-22", "value": 6}, {"date": "2025-08-25", "value": 5}, {"date": "2025-08-26", "value": 5}, {"date": "2025-08-27", "value": 5}, {"date": "2025-08-28", "value": 5}, {"date": "2025-08-29", "value": 6}, {"date": "2025-09-02", "value": 5}, {"date": "2025-09-03", "value": 5}, {"date": "2025-09-04", "value": 5}, {"date": "2025-09-05", "value": 6}, {"date": "2025-09-08", "value": 5}, {"date": "2025-09-09", "value": 5}, {"date": "2025-09-10", "value": 5}, {"date": "2025-09-11", "value": 5}, {"date": "2025-09-12", "value": 6}, {"date": "2025-09-15", "value": 5}, {"date": "2025-09-16", "value": 5}, {"date": "2025-09-17", "value": 5}, {"date": "2025-09-18", "value": 5}, {"date": "2025-09-19", "value": 6}, {"date": "2025-09-22", "value": 5}, {"date": "2025-09-23", "value": 5}, {"date": "2025-09-24", "value": 5}, {"date": "2025-09-25", "value": 3}, {"date": "2025-09-26", "value": 6}, {"date": "2025-09-29", "value": 5}, {"date": "2025-09-30", "value": 5}, {"date": "2025-10-01", "value": 5}, {"date": "2025-10-02", "value": 5}, {"date": "2025-10-03", "value": 6}, {"date": "2025-10-06", "value": 5}, {"date": "2025-10-07", "value": 5}, {"date": "2025-10-08", "value": 5}, {"date": "2025-10-09", "value": 5}, {"date": "2025-10-10", "value": 5}, {"date": "2025-10-13", "value": 5}], "v2_scorecard": [{"date": "2025-07-16", "value": 4}, {"date": "2025-07-17", "value": 6}, {"date": "2025-07-18", "value": 7}, {"date": "2025-07-21", "value": 7}, {"date": "2025-07-22", "value": 6}, {"date": "2025-07-23", "value": 5}, {"date": "2025-07-24", "value": 6}, {"date": "2025-07-25", "value": 7}, {"date": "2025-07-28", "value": 7}, {"date": "2025-07-29", "value": 6}, {"date": "2025-07-30", "value": 5}, {"date": "2025-07-31", "value": 3}, {"date": "2025-08-01", "value": 3}, {"date": "2025-08-04", "value": 3}, {"date": "2025-08-05", "value": 2}, {"date": "2025-08-06", "value": 4}, {"date": "2025-08-07", "value": 6}, {"date": "2025-08-08", "value": 6}, {"date": "2025-08-11", "value": 6}, {"date": "2025-08-12", "value": 7}, {"date": "2025-08-13", "value": 7}, {"date": "2025-08-14", "value": 6}, {"date": "2025-08-15", "value": 6}, {"date": "2025-08-18", "value": 6}, {"date": "2025-08-19", "value": 3}, {"date": "2025-08-20", "value": 2}, {"date": "2025-08-21", "value": 3}, {"date": "2025-08-22", "value": 4}, {"date": "2025-08-25", "value": 4}, {"date": "2025-08-26", "value": 5}, {"date": "2025-08-27", "value": 6}, {"date": "2025-08-28", "value": 7}, {"date": "2025-08-29", "value": 4}, {"date": "2025-09-02", "value": 2}, {"date": "2025-09-03", "value": 2}, {"date": "2025-09-04", "value": 5}, {"date": "2025-09-05", "value": 7}, {"date": "2025-09-08", "value": 7}, {"date": "2025-09-09", "value": 7}, {"date": "2025-09-10", "value": 7}, {"date": "2025-09-11", "value": 7}, {"date": "2025-09-12", "value": 7}, {"date": "2025-09-15", "value": 7}, {"date": "2025-09-16", "value": 7}, {"date": "2025-09-17", "value": 7}, {"date": "2025-09-18", "value": 7}, {"date": "2025-09-19", "value": 7}, {"date": "2025-09-22", "value": 7}, {"date": "2025-09-23", "value": 7}, {"date": "2025-09-24", "value": 6}, {"date": "2025-09-25", "value": 4}, {"date": "2025-09-26", "value": 5}, {"date": "2025-09-29", "value": 6}, {"date": "2025-09-30", "value": 7}, {"date": "2025-10-01", "value": 7}, {"date": "2025-10-02", "value": 7}, {"date": "2025-10-03", "value": 7}, {"date": "2025-10-06", "value": 7}, {"date": "2025-10-07", "value": 7}, {"date": "2025-10-08", "value": 7}, {"date": "2025-10-09", "value": 7}, {"date": "2025-10-10", "value": 3}, {"date": "2025-10-13", "value": 3}]};
         // TradingView-style color scheme
         const COLORS = {
             bg: '#1a1a1a',
